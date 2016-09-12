@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Daniel Chikimoni](https://up.htmlacademy.ru/adaptive/8/user/183012).
-* Наставник: `Неизвестно`.
+* Наставник: [Eugene Alanev](https://htmlacademy.ru/profile/id218109).
 
 ---
 
