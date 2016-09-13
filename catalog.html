@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка каталог</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <div class="page-header__logo">
+          <a href="index.html"><img src="#" alt="Mishka»"></a>
+          <a class="main-nav__toggle" href="#">Открыть меню</a>
+        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link">Каталог товаров</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="catalog-intro">
+      <h1>Каталог товаров</h1>
+    </section>
+    <section class="catalog-item catalog-item--1">
+      <a href="" class="catalog-item__image"><img src="http://placehold.it/150x100" alt="Зайчик-попрыгайчик"></a>
+      <h4>Зайчик-попрыгайчик</h4>
+      <p>Рост 30 см, вес 200 г</p>
+      <div class="catalog-item__price">
+        <span>1 200 руб.</span>
+      </div>
+    </section>
+    <section class="catalog-item catalog-item--2">
+      <a href="" class="catalog-item__image"><img src="http://placehold.it/150x100" alt="Корзинка для белья"></a>
+      <h4>Корзинка для белья</h4>
+      <p>Диаметр 15 см, высота 10 см</p>
+      <div class="catalog-item__price">
+        <span>690 руб.</span>
+      </div>
+    </section>
+    <section class="catalog-item catalog-item--3">
+      <a href="" class="catalog-item__image"><img src="http://placehold.it/150x100" alt="Большая корзинка для игрушек"></a>
+      <h4>Большая корзинка для игрушек</h4>
+      <p>Диаметр 30 см, высота 30 см</p>
+      <div class="catalog-item__price">
+        <span>1 500 руб.</span>
+      </div>
+    </section>
+    <section class="video">
+      <h4>Процесс производства</h4>
+      <video controls width="260" height="150">
+        <source src="#" type="video/mp4">
+        <source src="#" type="video/webm">
+        <source src="#" type="video/ogg">
+        <object data="#" type="application/x-shockwave-flash">
+          <param name="movie" value="video.swf">
+        </object>
+      </video>
+      <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <a href="#" class="button">Сделать заказ</a>
+    </section>
+    <footer class="page-footer">
+      <div class="page-footer__social social">
+        <a href="#" class="social__link--inst">Instagram</a>
+        <a href="#" class="social__link--fb">Facebook</a>
+        <a href="#" class="social__link--twit">Twitter</a>
+      </div>
+      <div class="page-footer__copyright">
+        <a href="#">Разработано <img src="#"></a>
+      </div>
+    </footer>
+    <section class=add-to-basket>
+      <h2>Добавить в корзину</h2>
+      <form class="parameters-form" name="size" method="post">
+        <fieldset class="parameters-form__item parameters-form__item--1">
+          <legend>Выберите размер:</legend>
+          <input class="size-radio" id="radio-one" type="radio" name="size" value="S" checked>
+          <label for="radio-one">S</label>
+          <input class="size-radio" id="radio-two" type="radio" name="size" value="M">
+          <label for="radio-two">M</label>
+          <input class="size-radio" id="radio-three" type="radio" name="size" value="L">
+          <label for="radio-three">L</label>
+        </fieldset>
+        <input type="submit" value="Добавить">
+      </form>
+    </section>
+  </body>
+</html>
