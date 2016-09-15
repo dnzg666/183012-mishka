@@ -3,103 +3,227 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
-        <div class="page-header__logo">
-          <a href="index.html"><img src="#" alt="Mishka»"></a>
-          <a class="main-nav__toggle" href="#">Открыть меню</a>
+      <menu class="nav">
+        <div class="nav__header">
+          <a class="nav__logo" href="index.html">
+            <img class="nav__logo-icon" src="#" alt="Mishka»">
+          </a>
+          <a class="nav__toggle">Открыть меню</a>
         </div>
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
-        </ul>
-      </nav>
+        <a class="nav__link" href="catalog.html">Каталог товаров</a>
+        <a class="nav__link" href="form.html">Вязание на заказ</a>
+        <a class="nav__link" href="#">Поиск по сайту</a>
+        <a class="nav__link" href="#">Корзина: пока пуста</a>
+      </menu>
     </header>
     <section class="intro">
-      <h1>Милые штуки ручной работы для дома</h1>
-      <a class="intro__interior" href="#">Предметы интерьера</a>
-      <a class="intro__toys" href="#">Детские игрушки</a>
+      <h1 class="intro__header">Милые штуки ручной работы для дома</h1>
+      <a class="intro__section intro__section--interior" href="#">Предметы интерьера</a>
+      <a class="intro__section intro__section--toys" href="#">Детские игрушки</a>
     </section>
     <section class="featured">
-      <h2>Вязаные корзинки</h2>
-      <span>Товар недели </span>
-      <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-      <table class="featured__table">
-        <tr>
-          <td>Цвет:</td>
-          <td>«Тиффани»/серый</td>
-        </tr>
-        <tr>
-          <td>Диаметр:</td>
-          <td>25 см</td>
-        </tr>
-        <tr>
-          <td>Высота:</td>
-          <td>15 см</td>
-        </tr>
-      </table>
-      <a class="featured__image"href="#"><img src="http://placehold.it/150x100"></a>
+      <h2 class="featured__deader">Вязаные корзинки</h2>
+      <span class="featured__goods-of-week">Товар недели </span>
+      <p class="featured__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+      <dl class="featured__props">
+        <dt class="featured__prop">Цвет:</dt>
+        <dd class="featured__value">«Тиффани»/серый</dd>
+      </dl>
+      <dl class="featured__props">
+        <dt class="featured__prop">Диаметр:</dt>
+        <dd class="featured__value">25 см</dd>
+      </dl>
+      <dl class="featured__props">
+        <dt class="featured__prop">Высота:</dt>
+        <dd class="featured__value">15 см</dd>
+      </dl>
+      <a class="featured__image" href="#">
+        <img src="http://placehold.it/150x100">
+      </a>
       <span class="featured__price">Цена: 990 руб.</span>
-      <a class="featured__order-button" href="#">Заказать</a>
+      <a class="featured__order-button button" href="#">Заказать</a>
     </section>
     <section class="about">
-      <h2>Коротко о нас:</h2>
-      <div class="about__item about__item--1">
-        <h4>Экологически чистые материалы</h4>
+      <h2 class="about__header">Коротко о нас:</h2>
+      <div class="about__item">
+        <img class="about__picture" src="#">
+        <h4 class="about__title">Экологически чистые материалы</h4>
       </div>
-      <div class="about__item about__item--2">
-        <h4>Скандинавский стиль по российской цене</h4>
+      <div class="about__item">
+        <img class="about__picture" src="#">
+        <h4 class="about__title">Скандинавский стиль по российской цене</h4>
       </div>
-      <div class="about__item about__item--3">
-        <h4>Увеличивает лайки на фотографиях</h4>
+      <div class="about__item">
+        <img class="about__picture" src="#">
+        <h4 class="about__title">Увеличивает лайки на фотографиях</h4>
       </div>
-      <div class="about__item about__item--4">
-        <h4>Связано вручную с любовью и умилением</h4>
+      <div class="about__item">
+        <img class="about__picture" src="#">
+        <h4 class="about__title">Связано вручную с любовью и умилением</h4>
       </div>
-      <div class="about__item about__item--5">
-        <h4>Поддержка отечественного производителя</h4>
+      <div class="about__item">
+        <img class="about__picture" src="#">
+        <h4 class="about__title">Поддержка отечественного производителя</h4>
       </div>
-      <div class="about__item about__item--6">
-        <h4>Поставляется в подарочной упаковке</h4>
+      <div class="about__item">
+        <img class="about__picture" src="#">
+        <h4 class="about__title">Поставляется в подарочной упаковке</h4>
       </div>
     </section>
     <section class="feedback">
-      <h2>Отзывы</h2>
-      <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
+      <h2 class="feedback__header">Отзывы</h2>
+      <p class="feedback__description">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
       <span class="feedback__name">Анастасия Красильникова</span>
       <span class="feedback__nickname">@misssssiskras</span>
       <div class="feedback__slide-buttons">
-        <button class="to-left" type="button"></button>
-        <button class="to-right" type="button"></button>
+        <button class="feedback__prev" type="button"></button>
+        <button class="feedback__next" type="button"></button>
       </div>
-      <a href="#" class="feedback__write button">Написать</a>
+      <a class="feedback__write button" href="#">Написать</a>
     </section>
     <section class="contacts">
-      <h3>Контакты</h3>
-      <table class="contacts__table">
-        <tr>
-          <td>e-mail:</td>
-          <td>info@mimimishkashop.ru</td>
-        </tr>
-        <tr>
-          <td>адрес:</td>
-          <td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-        </tr>
-      </table>
+      <h3 class="contacts__header">Контакты</h3>
+      <dl class="email__props">
+        <dt class="email__prop">e-mail:</dt>
+        <dd class="email__value">info@mimimishkashop.r</dd>
+      </dl>
+      <dl class="adress__props">
+        <dt class="adress__prop">адрес:</dt>
+        <dd class="adress__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</dd>
+      </dl>
       <div class="contacts__map">
         <img src="http://placehold.it/150x100">
       </div>
       <a href="#" class="contacts__write button">Напишите нам</a>
     </section>
+    <section class="intro intro--secondary">
+      <h1 class="intro__header">Каталог товаров</h1>
+    </section>
+    <section class="card">
+      <a class="card__preview" href="#" >
+        <img class="card__image" src="http://placehold.it/150x100" alt="Зайчик-попрыгайчик">
+      </a>
+      <h4 class="card__header">Зайчик-попрыгайчик</h4>
+      <p class="card__props">Рост 30 см, вес 200 г</p>
+      <div class="card__price-block">
+        <span class="card__price">1 200 руб.</span>
+        <button class="card__basket" type="button"></button>
+      </div>
+    </section>
+    <section class="card">
+      <a class="card__preview" href="#">
+        <img class="card__image" src="http://placehold.it/150x100" alt="Корзинка для белья">
+      </a>
+      <h4 class="card__header">Корзинка для белья</h4>
+      <p class="card__props">Диаметр 15 см, высота 10 см</p>
+      <div class="card__price-block">
+        <span class="card__price">690 руб.</span>
+        <button class="card__basket" type="button"></button>
+      </div>
+    </section>
+    <section class="card">
+      <a class="card__preview" href="#">
+        <img class="card__image" src="http://placehold.it/150x100" alt="Большая корзинка для игрушек">
+      </a>
+      <h4 class="card__header">Большая корзинка для игрушек</h4>
+      <p class="card__props">Диаметр 30 см, высота 30 см</p>
+      <div class="card__price-block">
+        <span class="card__price">1 500 руб.</span>
+        <button class="card__basket" type="button"></button>
+      </div>
+      <a href="" class=" _preview"><img src="" alt="" class=" _image"></a>
+    </section>
+    <section class="video">
+      <h4 class="video__header">Процесс производства</h4>
+      <video controls width="260" height="150">
+        <source src="#" type="video/mp4">
+        <source src="#" type="video/webm">
+        <source src="#" type="video/ogg">
+        <object data="#" type="application/x-shockwave-flash">
+          <param name="movie" value="video.swf">
+        </object>
+      </video>
+      <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+    </section>
+    <a class="order-button button" href="#">Сделать заказ</a>
+    <section class="intro intro--secondary">
+      <h1 class="intro__header">Вязание на заказ</h1>
+    </section>
+    <section class="order-form">
+      <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="order-form__items" name="order" method="post">
+        <fieldset class="order-form__item">
+          <legend class="order-form__legend">Тип</legend>
+          <!--
+          label.choose.choose--checkbox.choose--radio>input.-input+.-icon+.-name|bem
+          <label for="" class="choose choose--checkbox choose--radio">
+            <input type="text" class="choose__input">
+            <span class="choose__icon"></span>
+            <span class="choose__name"></span>
+          </label>
+
+          #order__choose--radio-one
+          <div id="order__choose--radio-one"></div>
+
+          .order__field
+          [type=tel]
+          -->
+
+          <input class="radio" id="radio-one" type="radio" name="type" value="interior" checked>
+          <label for="radio-one">Аксессуар для интерьера</label>
+          <input class="radio" id="radio-two" type="radio" name="type" value="toy">
+          <label for="radio-two">Детская игрушка</label>
+        </fieldset>
+        <fieldset class="order-form__item">
+          <legend>Цвет</legend>
+          <input class="checkbox" id="checkbox-one" type="checkbox" name="color" value="white" checked>
+          <label for="checkbox-one">Белый</label>
+          <input class="checkbox" id="checkbox-two" type="checkbox" name="color" value="gray" checked>
+          <label for="checkbox-two">Серый</label>
+          <input class="checkbox" id="checkbox-three" type="checkbox" name="color" value="tiffany">
+          <label for="checkbox-three">«Тиффани»</label>
+          <input class="checkbox" id="checkbox-four" type="checkbox" name="color" value="black">
+          <label for="checkbox-four">Черный</label>
+          <input class="checkbox" id="checkbox-five" type="checkbox" name="color" value="pink">
+          <label for="checkbox-five">Розовый</label>
+          <input class="checkbox" id="checkbox-six" type="checkbox" name="color" value="orange">
+          <label for="checkbox-six">Оранжевый</label>
+        </fieldset>
+        <fieldset class="order-form__item">
+          <legend>ФИО</legend>
+          <label for="firstname">Имя:</label>
+          <input class="input-text" id="firstname" type="text" placeholder="Введите ваше имя">
+          <label for="secondname">Фамилия:</label>
+          <input class="input-text" id="secondname" type="text" placeholder="Укажите фамилию">
+          <label for="thirdname">Отчество:</label>
+          <input class="input-text" id="thirdname" type="text" placeholder="Отчество, если желаете">
+        </fieldset>
+        <fieldset class="order-form__item">
+          <legend>Тел</legend>
+          <input class="order__field" id="phone" type="tel" placeholder="+7 ХХХ ХХ ХХ">
+        </fieldset>
+        <fieldset class="order-form__item">
+          <label for="email">E-mail</label>
+          <input class="order__field .order__field--email" id="email" type="email" placeholder="Ваш Email">
+        </fieldset>
+        <fieldset class="order-form__item">
+          <legend>Доп</legend>
+          <textarea name="comment" cols="40" rows="3">Опишите все ваши пожелания к заказу</textarea>
+        </fieldset>
+        <span>Все поля обязательны для заполнения</span>
+        <input class="order-form__button button" type="submit" value="Отправить заказ">
+      </form>
+    </section>
+
     <footer class="page-footer">
       <div class="page-footer__social social">
-        <a href="#" class="social__link--inst">Instagram</a>
-        <a href="#" class="social__link--fb">Facebook</a>
-        <a href="#" class="social__link--twit">Twitter</a>
+        <a href="#" class="social__link social__link--inst">Instagram</a>
+        <a href="#" class="social__link social__link--fb">Facebook</a>
+        <a href="#" class="social__link social__link--twit">Twitter</a>
       </div>
       <div class="page-footer__copyright">
         <a href="#">Разработано <img src="#"></a>
