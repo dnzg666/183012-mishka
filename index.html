@@ -204,29 +204,25 @@
         </fieldset>
         <fieldset class="order__section">
           <legend class="order__legend">ФИО</legend>
-          <label>Имя:
-            <input class="input-text" type="text" placeholder="Введите ваше имя">
-          </label>
-          <label>Фамилия:
-            <input class="input-text" type="text" placeholder="Укажите фамилию">
-          </label>
-          <label>Отчество:
-            <input class="input-text" type="text" placeholder="Отчество, если желаете">
-          </label>
+          <legend>ФИО</legend>
+          <label for="firstname">Имя:</label>
+          <input class="input-text" id="firstname" type="text" placeholder="Введите ваше имя">
+          <label for="secondname">Фамилия:</label>
+          <input class="input-text" id="secondname" type="text" placeholder="Укажите фамилию">
+          <label for="thirdname">Отчество:</label>
+          <input class="input-text" id="thirdname" type="text" placeholder="Отчество, если желаете">
         </fieldset>
         <fieldset class="order__section">
-          <label>Тел
-            <input class="order__field order__field--phone" id="phone" type="tel" placeholder="+7 ХХХ ХХ ХХ">
-          </label>
+          <label for="phone">Тел</label>
+          <input class="order__field order__field--phone" id="phone" type="tel" placeholder="+7 ХХХ ХХ ХХ">
         </fieldset>
         <fieldset class="order__section">
-          <label>E-mail
-            <input class="order__field order__field--email" type="email" placeholder="Ваш Email">
-          </label>
+          <label for="email">E-mail</label>
+          <input class="order__field order__field--email" id="email" type="email" placeholder="Ваш Email">
         </fieldset>
         <fieldset class="order__section">
           <legend>Доп</legend>
-          <textarea name="comment" cols="40" rows="3">Опишите все ваши пожелания к заказу</textarea>
+          <textarea class="order__comment" name="comment" cols="40" rows="3">Опишите все ваши пожелания к заказу</textarea>
         </fieldset>
         <span>Все поля обязательны для заполнения</span>
         <button type="submit">Отправить заказ</button>
@@ -247,14 +243,17 @@
       <form class="modal-form" name="size" method="post">
         <fieldset class="modal-form__section">
           <legend class="modal-form__legend">Выберите размер:</legend>
-          <label>S
-            <input class="size-radio" type="radio" name="size" value="S" checked>
+          <label>
+            <input class="modal-radio" type="radio" name="size" value="S" checked>
+            <span class="modal__name">S</span>
           </label>
-          <label>M
-            <input class="size-radio" type="radio" name="size" value="M">
+          <label>
+            <input class="modal__radio" type="radio" name="size" value="M">
+            <span class="modal__name">M</span>
           </label>
-          <label>L
-            <input class="size-radio" type="radio" name="size" value="L">
+          <label>
+            <input class="modal__radio" type="radio" name="size" value="L">
+            <span class="modal__name">L</span>
           </label>
         </fieldset>
         <button type="submit">Добавить</button>
