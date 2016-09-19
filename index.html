@@ -11,7 +11,7 @@
         <a class="header__logo" href="index.html">
           <img class="header__logo-icon" src="#" alt="Mishka»">
         </a>
-        <a class="header__toggle">Открыть меню</a>
+        <a class="header__toggle" href="#">Открыть меню</a>
       </div>
       <menu class="nav">
         <a class="nav__link" href="catalog.html">Каталог товаров</a>
@@ -80,20 +80,20 @@
       <span class="feedback__name">Анастасия Красильникова</span>
       <span class="feedback__nickname">@misssssiskras</span>
       <div class="feedback__slide-buttons">
-        <button class="feedback__prev" type="button"></button>
-        <button class="feedback__next" type="button"></button>
+        <button class="feedback__prev feedback__slide-button" type="button"></button>
+        <button class="feedback__next feedback__slide-button" type="button"></button>
       </div>
       <a class="feedback__write button" href="#">Написать</a>
     </section>
     <section class="contacts">
       <h3 class="contacts__header">Контакты</h3>
-      <dl class="email__props">
-        <dt class="email__prop">e-mail:</dt>
-        <dd class="email__value">info@mimimishkashop.r</dd>
+      <dl class="contacts__props">
+        <dt class="contacts__prop">e-mail:</dt>
+        <dd class="contacts__value contacts__value--email">info@mimimishkashop.ru</dd>
       </dl>
-      <dl class="adress__props">
-        <dt class="adress__prop">адрес:</dt>
-        <dd class="adress__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</dd>
+      <dl class="contacts__props">
+        <dt class="contacts__prop">адрес:</dt>
+        <dd class="contacts__value contacts__value--adress">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</dd>
       </dl>
       <div class="contacts__map">
         <img src="http://placehold.it/150x100">
@@ -101,7 +101,7 @@
       <a href="#" class="contacts__write button">Напишите нам</a>
     </section>
     <section class="intro intro--secondary">
-      <h1 class="intro__header">Каталог товаров</h1>
+      <h1 class="intro__header intro__header--secondary">Каталог товаров</h1>
     </section>
     <div class="card">
       <a class="card__preview" href="#" >
@@ -135,7 +135,7 @@
         <span class="card__price">1 500 руб.</span>
         <button class="card__basket" type="button"></button>
       </div>
-      <a href="" class=" _preview"><img src="" alt="" class=" _image"></a>
+      <a href="" class=" _preview"><img src="#" alt="" class=" _image"></a>
     </div>
     <section class="video">
       <h4 class="video__header">Процесс производства</h4>
@@ -151,7 +151,7 @@
     </section>
     <a class="order-button button" href="#">Сделать заказ</a>
     <section class="intro intro--secondary">
-      <h1 class="intro__header">Вязание на заказ</h1>
+      <h1 class="intro__header intro__header--secondary">Вязание на заказ</h1>
     </section>
     <section class="order-form">
       <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
@@ -204,32 +204,27 @@
         </fieldset>
         <fieldset class="order__section">
           <legend class="order__legend">ФИО</legend>
-          <label>Имя:
-            <input class="input-text" type="text" placeholder="Введите ваше имя">
-          </label>
-          <label>Фамилия:
-            <input class="input-text" type="text" placeholder="Укажите фамилию">
-          </label>
-          <label>Отчество:
-            <input class="input-text" type="text" placeholder="Отчество, если желаете">
-          </label>
+          <label for="firstname">Имя:</label>
+          <input class="order__field" id="firstname" type="text" placeholder="Введите ваше имя">
+          <label for="secondname">Фамилия:</label>
+          <input class="order__field" id="secondname" type="text" placeholder="Укажите фамилию">
+          <label for="thirdname">Отчество:</label>
+          <input class="order__field" id="thirdname" type="text" placeholder="Отчество, если желаете">
         </fieldset>
         <fieldset class="order__section">
-          <label>Тел
-            <input class="order__field order__field--phone" id="phone" type="tel" placeholder="+7 ХХХ ХХ ХХ">
-          </label>
+          <label for="phone">Тел</label>
+          <input class="order__field order__field--phone" id="phone" type="tel" placeholder="+7 ХХХ ХХ ХХ">
         </fieldset>
         <fieldset class="order__section">
-          <label>E-mail
-            <input class="order__field order__field--email" type="email" placeholder="Ваш Email">
-          </label>
+          <label for="email">E-mail</label>
+          <input class="order__field order__field--email" id="email" type="email" placeholder="Ваш Email">
         </fieldset>
         <fieldset class="order__section">
-          <legend>Доп</legend>
-          <textarea name="comment" cols="40" rows="3">Опишите все ваши пожелания к заказу</textarea>
+          <legend class="order__legend">Доп</legend>
+          <textarea class="order__comment" name="comment">Опишите все ваши пожелания к заказу</textarea>
         </fieldset>
-        <span>Все поля обязательны для заполнения</span>
-        <button type="submit">Отправить заказ</button>
+        <span class="order__note">Все поля обязательны для заполнения</span>
+        <button class="order__button button" type="submit">Отправить заказ</button>
       </form>
     </section>
     <footer class="page-footer">
@@ -242,22 +237,25 @@
         <a href="#">Разработано <img src="#"></a>
       </div>
     </footer>
-    <section class=modal>
+    <section class="modal">
       <h2 class="modal__header">Добавить в корзину</h2>
-      <form class="modal-form" name="size" method="post">
-        <fieldset class="modal-form__section">
-          <legend class="modal-form__legend">Выберите размер:</legend>
-          <label>S
-            <input class="size-radio" type="radio" name="size" value="S" checked>
+      <form class="modal__form" name="size" method="post">
+        <fieldset class="modal__section">
+          <legend class="modal__legend">Выберите размер:</legend>
+          <label>
+            <input class="modal__radio" type="radio" name="size" value="S" checked>
+            <span class="modal__name">S</span>
           </label>
-          <label>M
-            <input class="size-radio" type="radio" name="size" value="M">
+          <label>
+            <input class="modal__radio" type="radio" name="size" value="M">
+            <span class="modal__name">M</span>
           </label>
-          <label>L
-            <input class="size-radio" type="radio" name="size" value="L">
+          <label>
+            <input class="modal__radio" type="radio" name="size" value="L">
+            <span class="modal__name">L</span>
           </label>
         </fieldset>
-        <button type="submit">Добавить</button>
+        <button class="modal__button button" type="submit">Добавить</button>
       </form>
     </section>
   </body>

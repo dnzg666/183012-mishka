@@ -1,3 +1,20 @@
-body {
-  background: yellow;
-}
+@import "variables.css";
+@import "mixins.css";
+
+@import "global/fonts.css";
+
+@import "blocks/header.css";
+@import "blocks/nav.css";
+@import "blocks/intro.css";
+@import "blocks/featured.css";
+@import "blocks/about.css";
+@import "blocks/feedback.css";
+@import "blocks/contacts.css";
+@import "blocks/card.css";
+@import "blocks/video.css";
+@import "blocks/order-form.css";
+@import "blocks/order.css";
+@import "blocks/choose.css";
+@import "blocks/page-footer.css";
+@import "blocks/social.css";
+@import "blocks/modal.css";

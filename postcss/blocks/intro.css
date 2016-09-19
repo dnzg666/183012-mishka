@@ -1,0 +1,45 @@
+.intro {
+  width: 320px;
+}
+
+.intro--secondary {
+  background-color: #f1f1f1;
+}
+
+.intro__header {
+  color: #010000;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  margin-left: 38px;
+  margin-right: 38px;
+}
+
+.intro__header--secondary {
+  color: #231f20;
+  margin: 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.intro__section {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 29px;
+  text-decoration: none;
+}
+
+.intro__section--interior {
+  background-color: #63d1bb;
+}
+
+.intro__section--toys {
+  background-color: #56c3b2;
+}
