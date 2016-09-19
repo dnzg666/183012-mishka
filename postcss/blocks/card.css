@@ -1,0 +1,32 @@
+.card {
+  width: 260px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 34px;
+}
+
+.card__image {
+  width: 260px;
+  height: 195px;
+}
+
+.card__header {
+  color: #000000;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.card__props {
+  color: #444444;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.card__price {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+ }

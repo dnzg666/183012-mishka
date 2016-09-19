@@ -1,0 +1,41 @@
+.feedback {
+  width: 260px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 34px;
+}
+
+.feedback__header {
+  color: #444444;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.feedback__description {
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.feedback__name {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.feedback__nickname {
+  font-size: 18px;
+  color: #444;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.feedback__slide-button {
+  width: 129px;
+  height: 52px;
+  display: inline-block;
+  outline: 1px solid #ececec;
+}
