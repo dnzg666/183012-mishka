@@ -2,6 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta
+   name="viewport"
+   content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -9,7 +12,7 @@
     <header class="header">
       <div class="header__nav">
         <a class="header__logo" href="index.html">
-          <img class="header__logo-icon" src="#" alt="Mishka»">
+          <img class="header__logo-icon" src="img/logo-mobile.svg" alt="Mishka»">
         </a>
         <a class="header__toggle" href="#">Открыть меню</a>
       </div>
@@ -21,6 +24,11 @@
       </menu>
     </header>
     <section class="intro">
+      <div class="intro__additional">
+        <a class="intro__categories" href="#">Новые поступления</a>
+        <a class="intro__categories" href="#">Распродажа</a>
+        <span class="intro__free-delivery">Бесплатная доставка по России</span>
+      </div>
       <h1 class="intro__header">Милые штуки ручной работы для дома</h1>
       <a class="intro__section intro__section--interior" href="#">Предметы интерьера</a>
       <a class="intro__section intro__section--toys" href="#">Детские игрушки</a>
@@ -41,8 +49,8 @@
         <dt class="featured__prop">Высота:</dt>
         <dd class="featured__value">15 см</dd>
       </dl>
-      <a class="featured__image" href="#">
-        <img src="http://placehold.it/150x100">
+      <a class="featured__image-link" href="#">
+        <img class="featured__image" src="img/triple-set-mobile@1x.jpg">
       </a>
       <span class="featured__price">Цена: 990 руб.</span>
       <a class="featured__order-button button" href="#">Заказать</a>
@@ -148,8 +156,8 @@
         </object>
       </video>
       <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <a class="video__order-button button" href="#">Сделать заказ</a>
     </section>
-    <a class="order-button button" href="#">Сделать заказ</a>
     <section class="intro intro--secondary">
       <h1 class="intro__header intro__header--secondary">Вязание на заказ</h1>
     </section>
@@ -234,7 +242,7 @@
         <a href="#" class="social__link social__link--twit">Twitter</a>
       </div>
       <div class="page-footer__copyright">
-        <a href="#">Разработано <img src="#"></a>
+        <a class="page-footer__copyright-link" href="#">Разработано <img class="page-footer__copyright-img" src="#"></a>
       </div>
     </footer>
     <section class="modal">

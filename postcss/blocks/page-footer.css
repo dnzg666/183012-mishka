@@ -7,16 +7,15 @@
 }
 
 .page-footer__copyright {
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   position: relative;
 }
 
-.page-footer__copyright a {
-  color: #000000;
+.page-footer__copyright-link {
+  color: $title-color;
   font-size: 19px;
   font-weight: 700;
-  line-height: 18px;
   display: block;
   width: 128px;
   margin-left: auto;
@@ -24,8 +23,8 @@
   text-decoration: none;
 }
 
- .page-footer__copyright img {
-  width: 27px;
-  height: 34px;
+.page-footer__copyright-img {
+  width: 28px;
+  height: 35px;
   position: absolute;
  }

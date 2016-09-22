@@ -5,17 +5,15 @@
 }
 
 .contacts__header {
-  color: #000000;
+  color: $title-color;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
 }
 
 .contacts__props {
-  color: #444444;
+  color: $font-color-base;
   font-size: 15px;
-  font-weight: 400;
-  line-height: 30px;
   margin: 0;
 }
 
@@ -29,7 +27,7 @@
 }
 
 .contacts__value--email {
-  border-bottom: 1px solid #62d1ba;
+  border-bottom: 1px solid $accent-color;
 }
 
 .contacts__map {
@@ -37,6 +35,6 @@
 }
 
 .contacts__write {
-  margin-top: 39px;
-  margin-bottom: 39px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }

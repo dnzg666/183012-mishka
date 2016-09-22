@@ -1,20 +1,12 @@
 .order__legend {
-  color: #63d1bb;
+  color: $accent-color;
   font-size: 17px;
   font-weight: 700;
-  line-height: 16px;
   text-transform: uppercase;
 }
 
 .order__section {
   border: none;
-}
-
-.order__section label {
-  color: #000000;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 18px;
 }
 
 .order__field {
@@ -28,10 +20,8 @@
 }
 
 .order__note {
-  color: #444444;
+  color: $font-color-base;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 5px;
 }
 
 .order__button {

@@ -1,5 +1,9 @@
 .intro {
-  width: 320px;
+  @mixin container;
+  background-color: #f9f9f9;
+  background-image: url(../img/hero-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .intro--secondary {
@@ -7,39 +11,104 @@
 }
 
 .intro__header {
-  color: #010000;
+  color: $title-color;
   font-size: 27px;
   font-weight: 700;
   line-height: 30px;
   text-align: center;
-  margin-left: 38px;
-  margin-right: 38px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 75px;
+  padding-bottom: 120px;
+  margin: 0;
 }
 
 .intro__header--secondary {
-  color: #231f20;
+  color: $title-color;
   margin: 0;
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
 .intro__section {
-  color: #ffffff;
-  font-family: "Open Sans";
+  color: $font-color-alt;
   font-size: 19px;
   font-weight: 700;
   line-height: 24px;
   display: block;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 29px;
+  padding-left: 30px;
   text-decoration: none;
 }
 
 .intro__section--interior {
-  background-color: #63d1bb;
+  background-color: $accent-color;
 }
 
 .intro__section--toys {
   background-color: #56c3b2;
+}
+
+.intro__categories {
+  color: $title-color;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+.intro__free-delivery {
+  color: $font-color-base;
+  font-size: 15px;
+  float: right;
+  display: inline-block;
+}
+
+@media (--mobile-width) {
+
+  .intro {
+    background-position: 50% -20%;
+  }
+
+  .intro__free-delivery {
+    display: none;
+  }
+
+  .intro__categories {
+    display: none;
+  }
+}
+
+@media (--tablet-width) {
+  .intro {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-position: 50% 70%;
+  }
+
+  .intro__additional {
+    flex-grow: 1;
+    margin-top: 15px;
+  }
+
+  .intro__header {
+    padding-left: 135px;
+    padding-right: 135px;
+    padding-top: 160px;
+    flex-grow: 1;
+  }
+
+  .intro__section {
+    flex-grow: 2;
+  }
+}
+
+@media (--desktop-width) {
+  .intro__header {
+    padding-left: 270px;
+    padding-right: 270px;
+  }
 }

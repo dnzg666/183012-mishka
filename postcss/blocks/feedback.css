@@ -6,31 +6,26 @@
 }
 
 .feedback__header {
-  color: #444444;
+  color: $title-color;
   font-size: 25px;
   font-weight: 700;
-  line-height: 30px;
 }
 
 .feedback__description {
-  color: #444444;
+  color: $font-color-base;
   font-size: 15px;
-  font-weight: 400;
   line-height: 30px;
 }
 
 .feedback__name {
   font-size: 18px;
-  color: #000000;
+  color: $title-color;
   font-weight: 700;
-  line-height: 24px;
 }
 
 .feedback__nickname {
   font-size: 18px;
-  color: #444;
-  font-weight: 400;
-  line-height: 30px;
+  color: $font-color-base;
 }
 
 .feedback__slide-button {

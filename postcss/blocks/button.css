@@ -1,0 +1,15 @@
+.button {
+  width: 260px;
+  color: $font-color-base;
+  font-size: 17px;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  outline: 2px solid #444444;
+  border: none;
+  display: block;
+  background-color: $base-background-color;
+}

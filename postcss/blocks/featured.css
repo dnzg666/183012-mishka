@@ -1,38 +1,34 @@
 .featured {
-  width: 260px;
+  @mixin container;
   padding-left: 30px;
   padding-right: 30px;
 }
 
 .featured__header {
-  color: #000000;
+  color: $font-color-base;
   font-size: 25px;
   font-weight: 700;
-  line-height: 30px;
 }
 
 .featured__goods-of-week {
-  color: #63d1bb;
+  color: $accent-color;
   font-size: 17px;
   font-weight: 700;
-  line-height: 16px;
   text-transform: uppercase;
 }
 
 .featured__description {
   width: 249px;
   height: 63px;
-  color: #444444;
+  color: $font-color-base;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
 }
 
 .featured__props {
-  color: #444444;
+  color: $font-color-base;
   font-size: 15px;
-  font-weight: 400;
-  line-height: 20px;
   box-shadow: inset 0 -1px 0 #ececec;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -47,7 +43,7 @@
   display: inline-block;
 }
 
-.featured__image img {
+.featured__image {
   margin-top: 30px;
   width: 260px;
   height: 315px;
@@ -55,31 +51,28 @@
 
 .featured__price {
   display: block;
-  padding-top: 29px;
-  color: #444444;
+  padding-top: 30px;
+  color: $font-color-base;
   font-size: 17px;
   font-weight: 700;
-  line-height: 24px;
   text-align: center;
 }
 
 .featured__order-button {
-  margin-top: 29px;
+  margin-top: 30px;
 }
 
-.button {
-  width: 260px;
-  color: #444444;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 16px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  outline: 2px solid #444444;
-  border: none;
-  display: block;
-  background-color: #ffffff;
+@media (--tablet-width) {
+
+  .featured {
+    display: flex;
+    flex-direction: column;;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .featured__props {
+    width: 291px;
+  }
+
 }
