@@ -1,8 +1,7 @@
 .choose__name {
   width: 125px;
   height: 35px;
-  color: #000000;
+  color: $title-color;
   font-size: 17px;
   font-weight: 700;
-  line-height: 18px;
 }

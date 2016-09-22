@@ -5,14 +5,19 @@
 }
 
 .modal__header {
-  width: 146px;
+  width: 145px;
   text-align: center;
-  margin: 37px auto 25px auto;
-  color: #000000;
+  margin: 35px auto 25px auto;
+  color: $title-color;
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+ }
+
+ .modal__legend {
+  color: $font-color-base;
+  font-size: 15px;
  }
 
  .modal__section {
@@ -21,6 +26,6 @@
 
  .modal__button {
    outline: none;
-   color: #ffffff;
-   background-color: #63d1bb;
+   color: $font-color-alt;
+   background-color: $accent-color;
  }

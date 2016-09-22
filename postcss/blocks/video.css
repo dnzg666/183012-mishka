@@ -2,11 +2,11 @@
   width: 260px;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 34px;
+  padding-top: 35px;
 }
 
 .video__header {
-  color: #000000;
+  color: $title-color;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
@@ -14,10 +14,9 @@
 }
 
 .video__description {
-  color: #444444;
+  color: $font-color-base;
   font-size: 13px;
-  font-weight: 400;
   line-height: 24px;
-  margin-left: 34px;
-  margin-right: 43px;
+  margin-left: 35px;
+  margin-right: 45px;
  }
