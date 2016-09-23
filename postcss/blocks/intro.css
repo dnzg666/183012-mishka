@@ -4,6 +4,7 @@
   background-image: url(../img/hero-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  box-sizing: border-box;
 }
 
 .intro--secondary {
@@ -40,6 +41,8 @@
   padding-bottom: 30px;
   padding-left: 30px;
   text-decoration: none;
+  box-sizing: border-box;
+  padding-right: 37%
 }
 
 .intro__section--interior {
@@ -48,14 +51,6 @@
 
 .intro__section--toys {
   background-color: #56c3b2;
-}
-
-.intro__categories {
-  color: $title-color;
-  font-size: 15px;
-  font-weight: 700;
-  text-decoration: none;
-  margin-right: 30px;
 }
 
 .intro__free-delivery {
@@ -94,15 +89,19 @@
     margin-top: 15px;
   }
 
+  .intro__categories {
+    display: none;
+  }
+
   .intro__header {
     padding-left: 135px;
     padding-right: 135px;
     padding-top: 160px;
-    flex-grow: 1;
+    width: 100%;
   }
 
   .intro__section {
-    flex-grow: 2;
+    width: 50%;
   }
 }
 
@@ -110,5 +109,14 @@
   .intro__header {
     padding-left: 270px;
     padding-right: 270px;
+  }
+
+  .intro__categories {
+    color: $title-color;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 30px;
+    display: inline-block;
   }
 }
