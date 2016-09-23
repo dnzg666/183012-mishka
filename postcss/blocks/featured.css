@@ -2,6 +2,7 @@
   @mixin container;
   padding-left: 30px;
   padding-right: 30px;
+  box-sizing: border-box;
 }
 
 .featured__header {

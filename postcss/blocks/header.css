@@ -5,15 +5,12 @@
   flex-wrap: wrap;
 }
 
+.header__nav {
+  position: relative;
+  box-shadow: inset 0 -1px 0 #ececec;
+}
+
 @media (--mobile-width) {
-
-  .header__nav {
-    position: relative;
-  }
-
-  .header__nav {
-    box-shadow: inset 0 -1px 0 #ececec;
-  }
 
   .header__logo {
     width: 86px;
@@ -41,12 +38,12 @@
 
   .header {
     flex-direction: row;
+    flex-wrap: nowrap;
   }
 
   .header__nav {
-    z-index: 2;
-    position: absolute;
-
+    position: relative;
+    border-right: 1px solid #ececec;
   }
 
   .header__logo {
