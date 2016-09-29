@@ -1,6 +1,6 @@
 @custom-media --mobile-width (max-width: 767px);
 @custom-media --tablet-width (min-width: 768px);
-@custom-media --desktop-width (min-width: 1200px);
+@custom-media --desktop-width (min-width: 1150px);
 
 $title-color: #000000;
 $font-color-base: #444444;

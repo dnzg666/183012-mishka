@@ -9,6 +9,7 @@
 
 .intro--secondary {
   background-color: #f1f1f1;
+  background-image: none;
 }
 
 .intro__header {
@@ -94,21 +95,32 @@
   }
 
   .intro__header {
-    padding-left: 135px;
-    padding-right: 135px;
+    font-size: 43px;
+    line-height: 50px;
+    padding-left: 85px;
+    padding-right: 85px;
     padding-top: 160px;
     width: 100%;
+  }
+
+  .intro__header--secondary {
+    padding-top: 68px;
+    padding-bottom: 78px;
   }
 
   .intro__section {
     width: 50%;
   }
+
 }
 
 @media (--desktop-width) {
+
   .intro__header {
-    padding-left: 270px;
-    padding-right: 270px;
+    font-size: 53px;
+    line-height: 57px;
+    padding-left: 220px;
+    padding-right: 220px;
   }
 
   .intro__categories {

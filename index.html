@@ -36,26 +36,34 @@
       <a class="intro__section intro__section--toys" href="#">Детские игрушки</a>
     </section>
     <section class="featured">
-      <h2 class="featured__deader">Вязаные корзинки</h2>
-      <span class="featured__goods-of-week">Товар недели </span>
-      <p class="featured__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-      <dl class="featured__props">
-        <dt class="featured__prop">Цвет:</dt>
-        <dd class="featured__value">«Тиффани»/серый</dd>
-      </dl>
-      <dl class="featured__props">
-        <dt class="featured__prop">Диаметр:</dt>
-        <dd class="featured__value">25 см</dd>
-      </dl>
-      <dl class="featured__props">
-        <dt class="featured__prop">Высота:</dt>
-        <dd class="featured__value">15 см</dd>
-      </dl>
-      <a class="featured__image-link" href="#">
-        <img class="featured__image" src="img/triple-set-mobile@1x.jpg">
-      </a>
-      <span class="featured__price">Цена: 990 руб.</span>
-      <a class="featured__order-button button" href="#">Заказать</a>
+      <div class="featured__block">
+        <h2 class="featured__header">Вязаные корзинки</h2>
+        <span class="featured__goods-of-week">Товар недели </span>
+      </div>
+      <div class="featured__block">
+        <div class="featured__element featured__element--1">
+          <p class="featured__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <dl class="featured__props">
+            <dt class="featured__prop">Цвет:</dt>
+            <dd class="featured__value">«Тиффани»/серый</dd>
+          </dl>
+          <dl class="featured__props">
+            <dt class="featured__prop">Диаметр:</dt>
+            <dd class="featured__value">25 см</dd>
+          </dl>
+          <dl class="featured__props">
+            <dt class="featured__prop">Высота:</dt>
+            <dd class="featured__value">15 см</dd>
+          </dl>
+        </div>
+        <a class="featured__image-link featured__element featured__element--2" href="#">
+          <img class="featured__image" src="img/triple-set-mobile@1x.jpg">
+        </a>
+        <div class="featured__element featured__element--3">
+          <span class="featured__price">Цена: 990 руб.</span>
+          <a class="featured__order-button button" href="#">Заказать</a>
+        </div>
+      </div>
     </section>
     <section class="about">
       <h2 class="about__header">Коротко о нас:</h2>
@@ -87,69 +95,90 @@
     <section class="feedback">
       <h2 class="feedback__header">Отзывы</h2>
       <p class="feedback__description">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
-      <span class="feedback__name">Анастасия Красильникова</span>
-      <span class="feedback__nickname">@misssssiskras</span>
+      <div class="feedback__author">
+        <span class="feedback__name">Анастасия Красильникова</span>
+        <span class="feedback__nickname">@misssssiskras</span>
+      </div>
       <div class="feedback__slide-buttons">
         <button class="feedback__prev feedback__slide-button" type="button"></button>
         <button class="feedback__next feedback__slide-button" type="button"></button>
       </div>
-      <a class="feedback__write button" href="#">Написать</a>
+      <a class="feedback__write-button button" href="#">Написать</a>
     </section>
     <section class="contacts">
       <h3 class="contacts__header">Контакты</h3>
-      <dl class="contacts__props">
-        <dt class="contacts__prop">e-mail:</dt>
-        <dd class="contacts__value contacts__value--email">info@mimimishkashop.ru</dd>
-      </dl>
-      <dl class="contacts__props">
-        <dt class="contacts__prop">адрес:</dt>
-        <dd class="contacts__value contacts__value--adress">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</dd>
-      </dl>
+      <div class="contacts__props-block">
+        <dl class="contacts__props">
+          <dt class="contacts__prop">e-mail:</dt>
+          <dd class="contacts__value contacts__value--email">info@mimimishkashop.ru</dd>
+        </dl>
+        <dl class="contacts__props">
+          <dt class="contacts__prop">адрес:</dt>
+          <dd class="contacts__value contacts__value--adress">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</dd>
+        </dl>
+      </div>
       <div class="contacts__map">
         <img src="http://placehold.it/150x100">
       </div>
       <a href="#" class="contacts__write button">Напишите нам</a>
     </section>
     <section class="intro intro--secondary">
+      <div class="intro__additional">
+        <a class="intro__categories" href="#">Новые поступления</a>
+        <a class="intro__categories" href="#">Распродажа</a>
+        <span class="intro__free-delivery">Бесплатная доставка по России</span>
+      </div>
       <h1 class="intro__header intro__header--secondary">Каталог товаров</h1>
     </section>
-    <div class="card">
-      <a class="card__preview" href="#" >
-        <img class="card__image" src="http://placehold.it/150x100" alt="Зайчик-попрыгайчик">
-      </a>
-      <h4 class="card__header">Зайчик-попрыгайчик</h4>
-      <p class="card__props">Рост 30 см, вес 200 г</p>
-      <div class="card__price-block">
-        <span class="card__price">1 200 руб.</span>
-        <button class="card__basket" type="button"></button>
+    <section class="cards">
+      <div class="card">
+        <a class="card__preview" href="#" >
+          <img class="card__image" src="http://placehold.it/150x100" alt="Зайчик-попрыгайчик">
+        </a>
+        <div class="card__text">
+          <div class="card__text-height-block">
+            <h4 class="card__header">Зайчик-попрыгайчик</h4>
+            <p class="card__props">Рост 30 см, вес 200 г</p>
+          </div>
+          <div class="card__price-block">
+            <span class="card__price">1 200 руб.</span>
+            <button class="card__basket" type="button"></button>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <a class="card__preview" href="#">
-        <img class="card__image" src="http://placehold.it/150x100" alt="Корзинка для белья">
-      </a>
-      <h4 class="card__header">Корзинка для белья</h4>
-      <p class="card__props">Диаметр 15 см, высота 10 см</p>
-      <div class="card__price-block">
-        <span class="card__price">690 руб.</span>
-        <button class="card__basket" type="button"></button>
+      <div class="card">
+        <a class="card__preview" href="#">
+          <img class="card__image" src="http://placehold.it/150x100" alt="Корзинка для белья">
+        </a>
+        <div class="card__text">
+          <div class="card__text-height-block">
+            <h4 class="card__header">Корзинка для белья</h4>
+            <p class="card__props">Диаметр 15 см, высота 10 см</p>
+          </div>
+          <div class="card__price-block">
+            <span class="card__price">690 руб.</span>
+            <button class="card__basket" type="button"></button>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <a class="card__preview" href="#">
-        <img class="card__image" src="http://placehold.it/150x100" alt="Большая корзинка для игрушек">
-      </a>
-      <h4 class="card__header">Большая корзинка для игрушек</h4>
-      <p class="card__props">Диаметр 30 см, высота 30 см</p>
-      <div class="card__price-block">
-        <span class="card__price">1 500 руб.</span>
-        <button class="card__basket" type="button"></button>
+      <div class="card">
+        <a class="card__preview" href="#">
+          <img class="card__image" src="http://placehold.it/150x100" alt="Большая корзинка для игрушек">
+        </a>
+        <div class="card__text">
+          <div class="card__text-height-block">
+            <h4 class="card__header">Большая корзинка для игрушек</h4>
+            <p class="card__props">Диаметр 30 см, высота 30 см</p>
+          </div>
+          <div class="card__price-block">
+            <span class="card__price">1 500 руб.</span>
+            <button class="card__basket" type="button"></button>
+          </div>
+        </div>
       </div>
-      <a href="" class=" _preview"><img src="#" alt="" class=" _image"></a>
-    </div>
+    </section>
     <section class="video">
-      <h4 class="video__header">Процесс производства</h4>
-      <video controls width="260" height="150">
+      <video class="video__video video__video--big" controls width="260" height="150">
         <source src="#" type="video/mp4">
         <source src="#" type="video/webm">
         <source src="#" type="video/ogg">
@@ -157,10 +186,26 @@
           <param name="movie" value="video.swf">
         </object>
       </video>
-      <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-      <a class="video__order-button button" href="#">Сделать заказ</a>
+      <div class="video__container">
+        <h4 class="video__header">Процесс производства</h4>
+        <video class="video__video video__video--small" controls width="260" height="150">
+          <source src="#" type="video/mp4">
+          <source src="#" type="video/webm">
+          <source src="#" type="video/ogg">
+          <object data="#" type="application/x-shockwave-flash">
+            <param name="movie" value="video.swf">
+          </object>
+        </video>
+        <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="video__order-button button" href="#">Сделать заказ</a>
+      </div>
     </section>
     <section class="intro intro--secondary">
+      <div class="intro__additional">
+        <a class="intro__categories" href="#">Новые поступления</a>
+        <a class="intro__categories" href="#">Распродажа</a>
+        <span class="intro__free-delivery">Бесплатная доставка по России</span>
+      </div>
       <h1 class="intro__header intro__header--secondary">Вязание на заказ</h1>
     </section>
     <section class="order-form">
@@ -214,27 +259,29 @@
         </fieldset>
         <fieldset class="order__section">
           <legend class="order__legend">ФИО</legend>
-          <label for="firstname">Имя:</label>
+          <label class="order__name" for="firstname">Имя:</label>
           <input class="order__field" id="firstname" type="text" placeholder="Введите ваше имя">
-          <label for="secondname">Фамилия:</label>
+          <label class="order__name" for="secondname">Фамилия:</label>
           <input class="order__field" id="secondname" type="text" placeholder="Укажите фамилию">
-          <label for="thirdname">Отчество:</label>
+          <label class="order__name" for="thirdname">Отчество:</label>
           <input class="order__field" id="thirdname" type="text" placeholder="Отчество, если желаете">
         </fieldset>
         <fieldset class="order__section">
-          <label for="phone">Тел</label>
+          <legend class="order__legend">Тел</legend>
           <input class="order__field order__field--phone" id="phone" type="tel" placeholder="+7 ХХХ ХХ ХХ">
         </fieldset>
         <fieldset class="order__section">
-          <label for="email">E-mail</label>
+          <legend class="order__legend">E-mail</legend>
           <input class="order__field order__field--email" id="email" type="email" placeholder="Ваш Email">
         </fieldset>
         <fieldset class="order__section">
           <legend class="order__legend">Доп</legend>
           <textarea class="order__comment" name="comment">Опишите все ваши пожелания к заказу</textarea>
         </fieldset>
-        <span class="order__note">Все поля обязательны для заполнения</span>
-        <button class="order__button button" type="submit">Отправить заказ</button>
+        <div class="order__button-block">
+          <span class="order__note">Все поля обязательны для заполнения</span>
+          <button class="order__button button" type="submit">Отправить заказ</button>
+        </div>
       </form>
     </section>
     <footer class="page-footer">

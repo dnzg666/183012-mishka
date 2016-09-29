@@ -1,26 +1,43 @@
-.card {
-  width: 260px;
+.cards {
+  @mixin container;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 35px;
+  box-sizing: border-box;
+  padding-top: 30px;
 }
 
-.card__image {
+.card {
+  padding-top: 30px;
+}
+
+.card__text {
+  border: 1px solid #ececec;
+  padding: 30px;
+}
+
+.card__preview {
+  display: block;
   width: 260px;
   height: 195px;
+  background-color: gray;
 }
 
 .card__header {
   color: $title-color;
   font-size: 17px;
+  line-height: 17px;
   font-weight: 700;
   line-height: 24px;
+  margin: 0;
+  margin-bottom: 17px;
 }
 
 .card__props {
   color: $font-color-base;
   font-size: 13px;
-  line-height: 30px;
+  line-height: 13px;
+  margin: 0;
+  padding-bottom: 27px;
 }
 
 .card__price {
@@ -29,3 +46,119 @@
   font-weight: 700;
   line-height: 24px;
  }
+
+ .card__price-block {
+   border-top: 1px solid #ececec;
+   padding-top: 27px;
+ }
+
+ .card__basket {
+   float: right;
+   width: 21px;
+   height: 21px;
+   background-image: url("../../img/icon-cart.svg");
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-position: center;
+   border: none;
+ }
+
+ @media (--mobile-width) {
+
+   .card {
+     width: 260px;
+     margin-left: auto;
+     margin-right: auto;
+   }
+
+ }
+
+@media (--tablet-width) {
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .card {
+    align-items: stretch;
+    padding-top: 55px;
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .card__header {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .card__props {
+    font-size: 15px;
+  }
+
+  .card__price {
+    font-size: 17px;
+   }
+
+  .card__preview {
+    width: 335px;
+    min-width: 335px;
+    height: auto;
+  }
+
+  .card__text {
+    box-sizing: border-box;
+    flex-grow: 1;
+  }
+
+  .card__text-height-block {
+    min-height: 210px;
+  }
+
+  .card__props {
+    padding-bottom: 20px;
+  }
+
+}
+
+@media (--desktop-width) {
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    margin: auto;
+    align-items: baseline;
+  }
+
+  .card {
+    flex-direction: column;
+    width: 315px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card__preview {
+    width: auto;
+    min-width: 315px;
+    height: 460px;
+  }
+
+  .card__props {
+    padding-bottom: 20px;
+  }
+
+  .card__text-height-block {
+    min-height: 95px;
+  }
+
+}

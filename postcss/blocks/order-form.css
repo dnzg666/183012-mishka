@@ -1,12 +1,46 @@
 .order-form {
-  width: 260px;
+  @mixin container;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 35px;
+  box-sizing: border-box;
+  padding-top: 30px;
 }
 
 .order-form__description {
   color: $font-color-base;
   font-size: 13px;
   line-height: 24px;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+@media (--tablet-width) {
+
+  .order-form {
+    @mixin container;
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  .order-form__description {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 80px;
+    padding-bottom: 0px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+}
+
+@media (--desktop-width) {
+
+  .order-form {
+    @mixin container;
+    padding-left: 225px;
+    padding-right: 200px;
+    box-sizing: border-box;
+    padding-top: 130px;
+  }
+
 }

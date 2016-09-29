@@ -1,7 +1,8 @@
 .feedback {
-  width: 260px;
+  @mixin container;
   padding-left: 30px;
   padding-right: 30px;
+  box-sizing: border-box;
   padding-top: 34px;
 }
 
@@ -17,6 +18,10 @@
   line-height: 30px;
 }
 
+.feedback__author {
+  margin-bottom: 35px;
+}
+
 .feedback__name {
   font-size: 18px;
   color: $title-color;
@@ -28,9 +33,112 @@
   color: $font-color-base;
 }
 
+.feedback__slide-buttons {
+  display: flex;
+  margin-bottom: 35px;
+}
+
 .feedback__slide-button {
-  width: 129px;
+  width: 50%;
   height: 52px;
   display: inline-block;
-  outline: 1px solid #ececec;
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+  background-color: $base-background-color;
+}
+
+.feedback__slide-button:nth-of-type(2) {
+  border-left: none;
+}
+
+@media (--mobile-width) {
+
+  .feedback__author {
+    width: 300px;
+  }
+
+  .feedback__slide-buttons {
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .feedback__write-button {
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+@media (--tablet-width) {
+  .feedback {
+    @mixin container;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    padding-top: 85px;
+    padding-bottom: 68px;
+    background-image: url("../img/review@1x.jpg"); background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .feedback__header {
+    font-size: 43px;
+    display: block;
+    margin: 0;
+    order: 1;
+  }
+
+  .feedback__write-button {
+    width: 175px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    line-height: 0;
+    align-self: center;
+    order: 2;
+  }
+
+  .feedback__description {
+    font-size: 17px;
+    margin-top: 52px;
+    margin-bottom: 68px;
+    display: block;
+    order: 3;
+  }
+
+  .feedback__author {
+    width: 300px;
+    margin: 0;
+    order: 4;
+    align-self: baseline;;
+  }
+
+  .feedback__slide-buttons {
+    width: 140px;
+    order: 5;
+  }
+
+}
+
+@media (--desktop-width) {
+
+  .feedback {
+    padding-left: 225px;
+    padding-bottom: 100px;
+    background-position: 50px center;
+  }
+
+  .feedback__header {
+    font-size: 53px;
+  }
+
+  .feedback__description {
+    padding-right: 180px;
+    margin-bottom: 50px;
+  }
+
 }
