@@ -2,6 +2,7 @@
   @mixin container;
   padding-left: 30px;
   padding-right: 30px;
+  box-sizing: border-box;
 }
 
 .featured__header {
@@ -18,8 +19,6 @@
 }
 
 .featured__description {
-  width: 249px;
-  height: 63px;
   color: $font-color-base;
   font-size: 15px;
   font-weight: 400;
@@ -43,10 +42,13 @@
   display: inline-block;
 }
 
-.featured__image {
+.featured__image-link {
+  display: block;
   margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
   width: 260px;
-  height: 315px;
+  min-height: 315px;
 }
 
 .featured__price {
@@ -60,6 +62,8 @@
 
 .featured__order-button {
   margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (--tablet-width) {
@@ -69,10 +73,83 @@
     flex-direction: column;;
     padding-left: 50px;
     padding-right: 50px;
+    margin-top: 40px;
   }
 
-  .featured__props {
-    width: 291px;
+  .featured__block:first-of-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+
+  .featured__header {
+    margin: 0;
+    font-size: 43px;
+  }
+
+  .featured__goods-of-week {
+    display: block;
+    width: 75px;
+    text-align: center;
+    margin-top: 18px;
+    line-height: 16px;
+  }
+
+  .featured__block:nth-of-type(2) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+ .featured__element--1 {
+    box-sizing: border-box;
+    width: 50%;
+    padding-right: 44px;
+  }
+
+  .featured__element--2 {
+    width: 50%;
+  }
+
+  .featured__element--3 {
+    margin-top: -95px;
+  }
+}
+
+@media (--desktop-width) {
+
+  .featured__header {
+    font-size: 53px;
+  }
+
+  .featured__block:first-of-type {
+    justify-content: flex-start;
+    margin-top: 115px;
+  }
+
+  .featured__header {
+    order: 2;
+    margin-left: 55px;
+  }
+
+  .featured__goods-of-week {
+    order: 1;
+    margin-left: 45px;
+    margin-top: 25px;
+  }
+
+  .featured__element--1 {
+     padding-left: 175px;
+   }
+
+   .featured__element--2 {
+     margin-top: -100px;
+     z-index: -1;
+   }
+
+  .featured__element--3 {
+    padding-left: 175px;
+    margin-top: 50px;
   }
 
 }

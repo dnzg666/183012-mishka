@@ -5,3 +5,36 @@
   font-size: 17px;
   font-weight: 700;
 }
+
+@media (--mobile-width) {
+
+  .choose:first-of-type {
+    margin-top: 44px;
+  }
+
+  .choose--radio {
+    padding-bottom: 31px;
+  }
+
+  .choose--checkbox {
+    padding-bottom: 44px;
+  }
+
+}
+
+@media (--tablet-width) {
+
+  .choose__name {
+    font-size: 19px;
+  }
+
+  .choose--radio:first-of-type {
+    margin-bottom: 57px;
+  }
+
+  .choose--checkbox {
+    margin-bottom: 57px;
+    width: 200px;
+  }
+
+}

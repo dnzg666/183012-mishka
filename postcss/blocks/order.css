@@ -3,20 +3,37 @@
   font-size: 17px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .order__section {
+  padding: 0;
+  margin: 0;
   border: none;
+  display: flex;
 }
 
 .order__field {
   box-shadow: inset 0 -2px 0 #000000;
   border: none;
+  font-size: 17px;
+  padding: 0;
+  padding-bottom: 17px;
+  width: 100%;
 }
 
 .order__comment {
   border: none;
-  outline: 2px solid #000000;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  width: 100%;
+  height: 142px;
+  margin-top: 40px;
+  margin-bottom: 18px;
+  padding: 18px;
+  color: $font-color-base;
+  font-size: 17px;
+  line-height: 18px;
 }
 
 .order__note {
@@ -27,4 +44,113 @@
 .order__button {
   margin-top: 22px;
   margin-bottom: 55px;
+}
+
+.order__name {
+  color: $title-color;
+  font-size: 17px;
+  font-weight: 700;
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+
+.order__name:first-of-type {
+  padding-top: 37px;
+}
+
+@media (--mobile-width) {
+
+  .order {
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .order__section:before {
+    content: "";
+    display: block;
+    width: 198px;
+    height: 1px;
+    background-color: $accent-color;
+    margin-top: -41px;
+    margin-left: 64px;
+  }
+
+  .order__section:nth-of-type(3) {
+    padding-bottom: 36px;
+  }
+
+  .order__field--phone, .order__field--email {
+    padding-top: 25px;
+    margin-bottom: 35px;
+  }
+
+}
+
+@media (--tablet-width) {
+
+  .order {
+    position: relative;
+  }
+
+  .order__legend {
+    position: absolute;
+    left: 50px;
+  }
+
+  .order__section {
+    display: flex;
+    padding-left: 210px;
+    padding-right: 50px;
+    padding-top: 80px;
+    padding-bottom: 68px;
+  }
+
+  .order__section:nth-of-type(2), .order__section:nth-of-type(4),
+  .order__section:nth-of-type(5) {
+    background-color: #f1f1f1;
+  }
+
+  .order__section:nth-of-type(4) {
+    padding-bottom: 0;
+  }
+
+  .order__section:nth-of-type(5) {
+    padding-top: 40px;
+  }
+
+  .order__section:last-of-type {
+    padding-bottom: 53px;
+  }
+
+  .order__field--phone, .order__field--email {
+    background-color: #f1f1f1;
+  }
+
+  .order__comment {
+    margin: 0;
+  }
+
+  .order__button-block {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 52px;
+  }
+
+  .order__note {
+    font-size: 17px;
+  }
+
+  .order__button {
+    margin: 0;
+    width: 230px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+
 }
