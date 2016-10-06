@@ -1,0 +1,22 @@
+.cards {
+  @mixin container;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+@media (--tablet-width) {
+
+  .cards {
+    padding-top: 12px;
+  }
+
+}
+
+@media (--desktop-width) {
+
+  .cards {
+    padding-top: 112px;
+  }
+
+}

@@ -3,7 +3,8 @@
   padding-left: 30px;
   padding-right: 30px;
   box-sizing: border-box;
-  padding-top: 34px;
+  padding-top: 32px;
+  padding-bottom: 44px;
 }
 
 .feedback__header {
@@ -16,16 +17,15 @@
   color: $font-color-base;
   font-size: 15px;
   line-height: 30px;
-}
-
-.feedback__author {
-  margin-bottom: 35px;
+  margin-bottom: 27px;
 }
 
 .feedback__name {
+  display: block;
   font-size: 18px;
   color: $title-color;
   font-weight: 700;
+  margin-bottom: 6px;
 }
 
 .feedback__nickname {
@@ -47,6 +47,14 @@
   background-color: $base-background-color;
 }
 
+.feedback__slide-button:hover img {
+  opacity: 0.6;
+}
+
+.feedback__slide-button:active img {
+  opacity: 0.3;
+}
+
 .feedback__slide-button:nth-of-type(2) {
   border-left: none;
 }
@@ -55,18 +63,29 @@
 
   .feedback__author {
     width: 300px;
+    margin-bottom: 33px;
   }
 
   .feedback__slide-buttons {
     width: 260px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 38px;
+  }
+
+  .feedback__slide-button {
+    padding: 0;
+    padding-top: 2px;
+    padding-right: 2px;
   }
 
   .feedback__write-button {
     width: 260px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 11px;
+    padding-bottom: 13px;
+    font-size: 18px;
   }
 
 }
@@ -77,17 +96,23 @@
     padding-left: 50px;
     padding-right: 50px;
     box-sizing: border-box;
-    padding-top: 85px;
-    padding-bottom: 68px;
-    background-image: url("../img/review@1x.jpg"); background-repeat: no-repeat;
+    padding-top: 72px;
+    padding-bottom: 117px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-image: url(../img/review@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: 350px auto;
+    @media (--retina) {
+      background-image: url(../img/review@2x.jpg);
+    }
   }
 
   .feedback__header {
     font-size: 43px;
+    margin-left: -2px;
     display: block;
     margin: 0;
     order: 1;
@@ -95,8 +120,9 @@
 
   .feedback__write-button {
     width: 175px;
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    margin-top: 7px;
     line-height: 0;
     align-self: center;
     order: 2;
@@ -104,8 +130,8 @@
 
   .feedback__description {
     font-size: 17px;
-    margin-top: 52px;
-    margin-bottom: 68px;
+    margin-top: 45px;
+    margin-bottom: 57px;
     display: block;
     order: 3;
   }
@@ -117,9 +143,24 @@
     align-self: baseline;;
   }
 
+  .feedback__name {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+  .feedback__nickname {
+    font-size: 17px;
+  }
+
   .feedback__slide-buttons {
-    width: 140px;
+    width: 175px;
     order: 5;
+    margin: 0;
+    padding-top: 3px;
+  }
+
+  .feedback__slide-button {
+    border: none;
   }
 
 }
@@ -128,8 +169,10 @@
 
   .feedback {
     padding-left: 225px;
-    padding-bottom: 100px;
-    background-position: 50px center;
+    padding-bottom: 165px;
+    padding-top: 69px;
+    background-position-x: 50px;
+    background-position-y: 7px;
   }
 
   .feedback__header {
@@ -137,8 +180,14 @@
   }
 
   .feedback__description {
-    padding-right: 180px;
-    margin-bottom: 50px;
+    padding-right: 105px;
+    margin-bottom: 38px;
+    margin-top: 41px;
+  }
+
+  .feedback__write-button {
+
+    margin-top: 13px;
   }
 
 }

@@ -1,23 +1,94 @@
+.choose {
+  position: relative;
+}
+
 .choose__name {
-  width: 125px;
+  width: 160px;
   height: 35px;
   color: $title-color;
   font-size: 17px;
+  line-height: 18px;
   font-weight: 700;
+  display: inline-block;
+  margin-left: 62px;
+}
+
+.choose__icon {
+  position: absolute;
+  display: block;
+  border: 2px solid #444444;
+  box-sizing: border-box;
+  display: inline-block;
+  top: -10px;
+}
+
+.choose__icon:hover {
+  border: 2px solid #62d1ba;
+}
+
+.choose__icon:active {
+  border: 2px solid rgba(68, 68, 68, 0.3);
+}
+
+.choose__icon--radio {
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+}
+
+.choose__icon--checkbox {
+  width: 40px;
+  height: 39px;
+}
+
+.choose__radio {
+  display: none;
+}
+
+.choose__checkbox {
+  display: none;
+}
+
+.choose__radio:checked ~ .choose__icon:before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #62d1ba;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.choose__checkbox:checked ~ .choose__icon:before {
+  content: "";
+  display: block;
+  margin-top: 10px;
+  margin-left: 7px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/icon-tick-mobile.svg");
+  width: 22px;
+  height: 16px;
+
 }
 
 @media (--mobile-width) {
 
   .choose:first-of-type {
-    margin-top: 44px;
+    margin-top: 42px;
   }
 
-  .choose--radio {
-    padding-bottom: 31px;
+  .choose--radio:first-of-type {
+    padding-bottom: 26px;
   }
 
   .choose--checkbox {
-    padding-bottom: 44px;
+    padding-bottom: 24px;
+  }
+
+  .choose--checkbox:last-of-type {
+    padding-bottom: 5px;
   }
 
 }

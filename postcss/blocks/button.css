@@ -13,3 +13,27 @@
   background-color: $base-background-color;
   box-sizing: border-box;
 }
+
+.button:hover {
+  color: #ffffff;
+  background-color: #444444;
+  animation-name: color-transform;
+  animation-duration: 0.2s;
+}
+
+@keyframes color-transform {
+
+  0% {
+    color: $font-color-base;
+    background-color: $base-background-color;
+  }
+  100% {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+}
+
+.button:active {
+  color: #7c7c7c;
+}
