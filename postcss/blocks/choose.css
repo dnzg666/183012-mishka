@@ -70,7 +70,6 @@
   background-image: url("../img/icon-tick-mobile.svg");
   width: 22px;
   height: 16px;
-
 }
 
 @media (--mobile-width) {
@@ -95,17 +94,69 @@
 
 @media (--tablet-width) {
 
+  .choose__icon {
+    top: -14px;
+  }
+
+  .choose--radio .choose__name {
+    width: 260px;
+    margin-left: 80px;
+  }
+
+  .choose--checkbox .choose__name {
+    width: 120px;
+    margin-left: 80px;
+  }
+
+  .choose__icon--radio {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+  }
+
+  .choose__icon--checkbox {
+    width: 54px;
+    height: 52px;
+  }
+
+  .choose__radio:checked ~ .choose__icon:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #62d1ba;
+    margin-left: 14px;
+    margin-top: 14px;
+  }
+
+  .choose__checkbox:checked ~ .choose__icon:before {
+    content: "";
+    display: block;
+    margin-top: 14px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/icon-tick.svg");
+    width: 33px;
+    height: 22px;
+  }
+
   .choose__name {
     font-size: 19px;
   }
 
   .choose--radio:first-of-type {
-    margin-bottom: 57px;
+    margin-bottom: 39px;
   }
 
   .choose--checkbox {
-    margin-bottom: 57px;
+    margin-bottom: 39px;
     width: 200px;
+  }
+
+  .choose--checkbox:nth-child(2n-1) {
+    margin-right: 62px;
   }
 
 }
