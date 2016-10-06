@@ -3,12 +3,18 @@
   padding-left: 30px;
   padding-right: 30px;
   box-sizing: border-box;
+  padding-bottom: 42px;
+  background: url("../../img/bg-zigzag-line-mobile.svg");
+  background-repeat: repeat-x;
+  background-position-y: 100%;
 }
 
 .featured__header {
   color: $font-color-base;
   font-size: 25px;
   font-weight: 700;
+  margin-top: 25px;
+  margin-bottom: 1px;
 }
 
 .featured__goods-of-week {
@@ -23,23 +29,27 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
+  margin-top: 22px;
+  margin-bottom: 17px;
 }
 
 .featured__props {
   color: $font-color-base;
   font-size: 15px;
   box-shadow: inset 0 -1px 0 #ececec;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin: 0;
 }
 
 .featured__prop {
   display: inline-block;
+  width: 93px;
 }
 
 .featured__value {
   display: inline-block;
+  margin: 0;
 }
 
 .featured__image-link {
@@ -53,7 +63,7 @@
 
 .featured__price {
   display: block;
-  padding-top: 30px;
+  padding-top: 18px;
   color: $font-color-base;
   font-size: 17px;
   font-weight: 700;
@@ -61,9 +71,12 @@
 }
 
 .featured__order-button {
-  margin-top: 30px;
+  margin-top: 27px;
+  padding-top: 12px;
+  padding-bottom: 13px;
   margin-left: auto;
   margin-right: auto;
+  box-sizing: border-box;
 }
 
 @media (--tablet-width) {
@@ -73,7 +86,11 @@
     flex-direction: column;;
     padding-left: 50px;
     padding-right: 50px;
-    margin-top: 40px;
+    padding-bottom: 64px;
+    margin-top: 29px;
+    background: url("../../img/bg-zigzag-line-tablet.svg");
+    background-repeat: repeat-x;
+    background-position-y: 100%;
   }
 
   .featured__block:first-of-type {
@@ -81,10 +98,12 @@
     flex-direction: row;
     justify-content: space-between;
     box-sizing: border-box;
+    margin-bottom: 20px;
   }
 
   .featured__header {
     margin: 0;
+    margin-left: -3px;
     font-size: 43px;
   }
 
@@ -93,7 +112,21 @@
     width: 75px;
     text-align: center;
     margin-top: 18px;
+    margin-right: 25px;
     line-height: 16px;
+  }
+
+  .featured__description {
+    font-size: 17px;
+    line-height: 30px;
+    margin: 0;
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
+
+  .featured__image-link {
+    width: 333px;
+    min-height: 404px;
   }
 
   .featured__block:nth-of-type(2) {
@@ -108,15 +141,36 @@
   }
 
   .featured__element--2 {
-    width: 50%;
+    margin-top: 33px;
   }
 
   .featured__element--3 {
-    margin-top: -95px;
+    margin-top: -116px;
+    width: 44%;
   }
+
+  .featured__price {
+    padding: 0;
+    font-size: 20px;
+  }
+
+  .featured__order-button {
+    width: 100%;
+    width: 292px;
+    margin-top: 32px;
+  }
+
 }
 
 @media (--desktop-width) {
+
+  .featured {
+    margin-top: 0;
+    background: url("../../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position-y: 100%;
+    padding-bottom: 91px;
+  }
 
   .featured__header {
     font-size: 53px;
@@ -124,12 +178,12 @@
 
   .featured__block:first-of-type {
     justify-content: flex-start;
-    margin-top: 115px;
+    margin-top: 99px;
   }
 
   .featured__header {
     order: 2;
-    margin-left: 55px;
+    margin-left: 27px;
   }
 
   .featured__goods-of-week {
@@ -138,18 +192,33 @@
     margin-top: 25px;
   }
 
+  .featured__description {
+    margin-top: 21px;
+    margin-bottom: 47px;
+  }
+
+  .featured__image-link {
+    width: 525px;
+    min-height: 636px;
+  }
+
   .featured__element--1 {
      padding-left: 175px;
+     padding-right: 65px;
    }
 
    .featured__element--2 {
-     margin-top: -100px;
+     margin-top: -137px;
      z-index: -1;
    }
 
   .featured__element--3 {
-    padding-left: 175px;
-    margin-top: 50px;
+    padding-left: 94px;
+    margin-top: -116px;
+  }
+
+  .featured__order-button {
+    margin-left: 83px;
   }
 
 }

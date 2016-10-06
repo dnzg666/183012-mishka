@@ -9,31 +9,69 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <svg style="display:none">
+      <symbol viewBox="-0.8 -0.8 17.6 17.6" id="icon-search">
+        <path d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
+      </symbol>
+      <symbol viewBox="264.205 370.961 20.294 18.849" id="icon-cart">
+        <path d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
+      </symbol>
+      <symbol viewBox="-259.404 -19.675 40.219 62.411" id="icon-interior">
+        <path d="M-244.227,18.283c-0.286,0.966-0.245,2.191,0.027,3.639c0.494,2.635,1.687,6.041,2.358,9.67h5.062 c0.696-3.641,1.949-7.05,2.471-9.683c0.287-1.445,0.33-2.66,0.041-3.617c-0.275-0.899-0.89-1.618-2.021-2.303h-5.997 C-243.361,16.668-243.96,17.38-244.227,18.283z"/>
+        <path d="M-232.395,38.278h-13.799c-1.293,0-2.299,0.976-2.299,2.229v2.229h2.299h13.799h2.299v-2.229 C-230.096,39.254-231.102,38.278-232.395,38.278z"/>
+        <path d="M-225.262-17.446h-11.732c0-1.244-1.015-2.229-2.3-2.229c-1.283,0-2.3,0.985-2.3,2.229h-11.737l-6.073,25.517 c0.794-0.461,1.589-0.992,2.632-0.992c1.359,0,2.243,0.818,2.924,1.375c0.682,0.557,1.162,0.849,1.447,0.849 c0.292,0.001,0.769-0.287,1.451-0.836c0.681-0.548,1.564-1.358,2.915-1.358c1.349,0,2.237,0.806,2.919,1.354 c0.684,0.549,1.161,0.84,1.451,0.84c0.146,0,0.338-0.073,0.58-0.214c0.242-0.141,0.53-0.353,0.872-0.626 c0.512-0.411,1.139-0.967,1.99-1.218c0.284-0.085,0.593-0.136,0.93-0.136c1.347,0,2.238,0.805,2.92,1.354 c0.683,0.548,1.159,0.84,1.451,0.84c0.287-0.002,0.766-0.296,1.445-0.85c0.684-0.554,1.571-1.367,2.925-1.367 c1.356,0,2.239,0.817,2.919,1.371c0.342,0.276,0.631,0.489,0.872,0.631c0.24,0.143,0.431,0.214,0.575,0.214 c0.288,0,0.762-0.293,1.442-0.854c0.68-0.559,1.567-1.384,2.929-1.384c1.044,0,1.839,0.533,2.632,0.997L-225.262-17.446z"/>
+        <path d="M-235.881,33.82h-6.864c-0.657,0-1.15,0.479-1.15,1.115c0,0.635,0.493,1.113,1.15,1.113h6.9c0.655,0,1.15-0.479,1.15-1.113 c0-0.636-0.495-1.115-1.15-1.115H-235.881z"/>
+        <path d="M-239.295,9.336c-0.146,0-0.338,0.074-0.58,0.213c-0.157,0.094-0.37,0.261-0.57,0.41v3.731h2.299V9.959 C-238.651,9.581-239.054,9.336-239.295,9.336z"/>
+      </symbol>
+      <symbol viewBox="226.001 226.19 60 59.62" id="icon-toys">
+        <path d="M226.001,269.871l27.438,15.934v-23.346l-27.438-15.94V269.871z M277.347,238.627v2.453 c0,1.817-3.458,3.29-7.73,3.29c-4.266,0-7.727-1.473-7.727-3.29v-4.059h0.024c0.26,1.714,3.604,3.073,7.702,3.073 c4.272,0,7.729-1.474,7.729-3.285c0-1.819-3.457-3.289-7.729-3.289c-0.339,0-0.675,0.01-1.002,0.03l-4.975-2.888v3.086 c0,1.817-3.454,3.29-7.723,3.29c-2.683,0-5.045-0.583-6.433-1.467c-0.196-0.203-0.439-0.401-0.732-0.586 c-0.363-0.381-0.565-0.797-0.565-1.236v-2.986l-4.807,2.792c-0.347-0.017-0.696-0.033-1.054-0.033c-4.267,0-7.727,1.469-7.727,3.289 c0,1.811,3.46,3.285,7.727,3.285c4.099,0,7.446-1.358,7.705-3.073h0.022v4.059c0,1.817-3.455,3.29-7.727,3.29 c-4.267,0-7.727-1.473-7.727-3.29v-2.42l-5.952,3.452l27.531,15.986l27.351-15.882L277.347,238.627z M263.703,248.793 c0,1.817-3.46,3.287-7.727,3.287c-4.269,0-7.729-1.47-7.729-3.287v-4.059h0.024c0.26,1.715,3.603,3.076,7.705,3.076 c4.101,0,7.443-1.361,7.705-3.076h0.021V248.793L263.703,248.793z M258.558,262.666v23.144L286,269.871v-23.144L258.558,262.666z  M255.917,232.762c4.269,0,7.723-1.47,7.723-3.286c0-1.814-3.454-3.287-7.723-3.287c-4.27,0-7.729,1.472-7.729,3.287 C248.187,231.292,251.647,232.762,255.917,232.762"/>
+      </symbol>
+      <symbol viewBox="0 0 24.829 24.333" id="icon-phone">
+          <path d="M17.321,24.333c-0.371,0-0.744,0-1.115,0c-4.904-0.58-8.497-2.857-11.11-5.772C2.473,15.637,0.402,11.875,0,6.817 c0-0.453,0-0.906,0-1.358c0.091-0.921,0.544-1.55,1.067-2.086c0.65-0.666,1.63-1.522,2.522-1.553 c0.659-0.022,1.78,0.451,2.232,1.066c0.388,0.53,0.595,1.59,0.775,2.378c0.185,0.797,0.6,1.95,0.485,2.717 C6.905,9.177,5.317,9.684,4.85,10.553c1.551,3.721,4.089,6.456,7.472,8.345c0.847-0.465,1.595-1.864,2.767-1.892 c0.428-0.012,0.972,0.209,1.406,0.34c0.477,0.143,0.891,0.326,1.311,0.484c0.705,0.266,1.957,0.621,2.378,1.213 c0.433,0.61,0.681,1.608,0.581,2.231C20.571,22.508,18.538,23.877,17.321,24.333z"/>
+          <path d="M12.529,1.528c5.949,0,10.771,4.822,10.771,10.771h1.529C24.829,5.507,19.323,0,12.529,0V1.528z"/>
+          <path d="M12.529,9.327v1.552c0.785,0,1.421,0.636,1.421,1.42h1.553C15.502,10.657,14.172,9.327,12.529,9.327z"/>
+          <path d="M12.529,6.246c3.345,0,6.056,2.71,6.056,6.054h1.588c0-4.22-3.422-7.641-7.644-7.641V6.246z"/>
+      </symbol>
+    </svg>
     <header class="header">
       <div class="header__nav">
         <a class="header__logo" href="index.html">
-          <img class="header__logo-icon" src="img/logo-mobile.svg" alt="Mishka»">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+          </picture>
         </a>
         <a class="header__toggle" href="#">Открыть меню</a>
       </div>
       <menu class="nav nav--1">
-        <a class="nav__link" href="catalog.html">Каталог товаров</a>
-        <a class="nav__link" href="form.html">Вязание на заказ</a>
+        <a class="nav__link text-link" href="catalog.html">Каталог товаров</a>
+        <a class="nav__link text-link" href="form.html">Вязание на заказ</a>
       </menu>
       <menu class="nav nav--2">
-        <a class="nav__link" href="#">Поиск по сайту</a>
-        <a class="nav__link" href="#">Корзина: пока пуста</a>
+        <a class="nav__link" href="#">
+          <span>Поиск по сайту</span>
+          <svg class="nav__link-icon" width="18" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use></svg>
+        </a>
+        <a class="nav__link" href="#">
+          <span>Корзина: пока пуста</span>
+          <svg class="nav__link-icon" width="21" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use></svg>
+        </a>
       </menu>
     </header>
-    <section class="intro">
+    <section class="intro intro--main">
       <div class="intro__additional">
-        <a class="intro__categories" href="#">Новые поступления</a>
-        <a class="intro__categories" href="#">Распродажа</a>
+        <a class="intro__categories text-link" href="#">Новые поступления</a>
+        <a class="intro__categories text-link" href="#">Распродажа</a>
         <span class="intro__free-delivery">Бесплатная доставка по России</span>
       </div>
-      <h1 class="intro__header">Милые штуки ручной работы для дома</h1>
-      <a class="intro__section intro__section--interior" href="#">Предметы интерьера</a>
-      <a class="intro__section intro__section--toys" href="#">Детские игрушки</a>
+      <h1 class="intro__header">Милые штуки ручной<br/> работы для дома</h1>
+      <div class="intro__sections">
+        <a class="intro__section intro__section--interior" href="#">Предметы<br> интерьера
+        <svg width="41" height="62"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-interior"></use></svg></a>
+        <a class="intro__section intro__section--toys" href="#">Детские<br> игрушки
+        <svg width="60" height="61"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-toys"></use></svg></a>
+      </div>
     </section>
     <section class="featured">
       <div class="featured__block">
@@ -57,7 +95,11 @@
           </dl>
         </div>
         <a class="featured__image-link featured__element featured__element--2" href="#">
-          <img class="featured__image" src="img/triple-set-mobile@1x.jpg">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img class="featured__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+          </picture>
         </a>
         <div class="featured__element featured__element--3">
           <span class="featured__price">Цена: 990 руб.</span>
@@ -68,27 +110,27 @@
     <section class="about">
       <h2 class="about__header">Коротко о нас:</h2>
       <div class="about__item">
-        <img class="about__picture" src="#">
+        <img class="about__picture" src="img/icon-feature-1.svg" width="33" height="38">
         <h4 class="about__title">Экологически чистые материалы</h4>
       </div>
       <div class="about__item">
-        <img class="about__picture" src="#">
+        <img class="about__picture" src="img/icon-feature-3.svg" width="47" height="27">
         <h4 class="about__title">Скандинавский стиль по российской цене</h4>
       </div>
       <div class="about__item">
-        <img class="about__picture" src="#">
+        <img class="about__picture" src="img/icon-feature-5.svg" width="34" height="27">
         <h4 class="about__title">Увеличивает лайки на фотографиях</h4>
       </div>
       <div class="about__item">
-        <img class="about__picture" src="#">
+        <img class="about__picture" src="img/icon-feature-2.svg" width="35" height="34">
         <h4 class="about__title">Связано вручную с любовью и умилением</h4>
       </div>
       <div class="about__item">
-        <img class="about__picture" src="#">
+        <img class="about__picture" src="img/icon-feature-4.svg" width="55" height="23">
         <h4 class="about__title">Поддержка отечественного производителя</h4>
       </div>
       <div class="about__item">
-        <img class="about__picture" src="#">
+        <img class="about__picture" src="img/icon-feature-6.svg" width="33" height="32">
         <h4 class="about__title">Поставляется в подарочной упаковке</h4>
       </div>
     </section>
@@ -100,8 +142,12 @@
         <span class="feedback__nickname">@misssssiskras</span>
       </div>
       <div class="feedback__slide-buttons">
-        <button class="feedback__prev feedback__slide-button" type="button"></button>
-        <button class="feedback__next feedback__slide-button" type="button"></button>
+        <button class="feedback__prev feedback__slide-button" type="button">
+          <img src="img/icon-left-arrow.svg" alt="left">
+        </button>
+        <button class="feedback__next feedback__slide-button" type="button">
+          <img src="img/icon-right-arrow.svg" alt="right">
+        </button>
       </div>
       <a class="feedback__write-button button" href="#">Написать</a>
     </section>
@@ -110,22 +156,30 @@
       <div class="contacts__props-block">
         <dl class="contacts__props">
           <dt class="contacts__prop">e-mail:</dt>
-          <dd class="contacts__value contacts__value--email">info@mimimishkashop.ru</dd>
+          <dd class="contacts__value contacts__value--email">
+            <a href="#">info@mimimishkashop.ru</a>
+          </dd>
         </dl>
         <dl class="contacts__props">
-          <dt class="contacts__prop">адрес:</dt>
+          <dt class="contacts__prop ">адрес:</dt>
           <dd class="contacts__value contacts__value--adress">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</dd>
         </dl>
       </div>
       <div class="contacts__map">
-        <img src="http://placehold.it/150x100">
+        <a class="contacts__map-link" href="#">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x">
+            <img class="contacts__map-image" src="img/map-mobile@1x.jpg" alt="Вязаные корзинки">
+          </picture>
+        </a>
       </div>
       <a href="#" class="contacts__write button">Напишите нам</a>
     </section>
     <section class="intro intro--secondary">
       <div class="intro__additional">
-        <a class="intro__categories" href="#">Новые поступления</a>
-        <a class="intro__categories" href="#">Распродажа</a>
+        <a class="intro__categories text-link" href="#">Новые поступления</a>
+        <a class="intro__categories text-link" href="#">Распродажа</a>
         <span class="intro__free-delivery">Бесплатная доставка по России</span>
       </div>
       <h1 class="intro__header intro__header--secondary">Каталог товаров</h1>
@@ -133,7 +187,11 @@
     <section class="cards">
       <div class="card">
         <a class="card__preview" href="#" >
-          <img class="card__image" src="http://placehold.it/150x100" alt="Зайчик-попрыгайчик">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+            <img class="card__preview-image" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
+          </picture>
         </a>
         <div class="card__text">
           <div class="card__text-height-block">
@@ -142,13 +200,21 @@
           </div>
           <div class="card__price-block">
             <span class="card__price">1 200 руб.</span>
-            <button class="card__basket" type="button"></button>
+            <button class="card__basket" type="button">
+              <svg class="card__basket-icon" width="21" height="18">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
       <div class="card">
         <a class="card__preview" href="#">
-          <img class="card__image" src="http://placehold.it/150x100" alt="Корзинка для белья">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+            <img class="card__preview-image" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Корзинка для белья">
+          </picture>
         </a>
         <div class="card__text">
           <div class="card__text-height-block">
@@ -157,13 +223,21 @@
           </div>
           <div class="card__price-block">
             <span class="card__price">690 руб.</span>
-            <button class="card__basket" type="button"></button>
+            <button class="card__basket" type="button">
+                <svg class="card__basket-icon" width="21" height="18">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
+                </svg>
+            </button>
           </div>
         </div>
       </div>
       <div class="card">
         <a class="card__preview" href="#">
-          <img class="card__image" src="http://placehold.it/150x100" alt="Большая корзинка для игрушек">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+            <img class="card__preview-image" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек">
+          </picture>
         </a>
         <div class="card__text">
           <div class="card__text-height-block">
@@ -172,7 +246,11 @@
           </div>
           <div class="card__price-block">
             <span class="card__price">1 500 руб.</span>
-            <button class="card__basket" type="button"></button>
+            <button class="card__basket" type="button">
+              <svg class="card__basket-icon" width="21" height="18">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -202,8 +280,8 @@
     </section>
     <section class="intro intro--secondary">
       <div class="intro__additional">
-        <a class="intro__categories" href="#">Новые поступления</a>
-        <a class="intro__categories" href="#">Распродажа</a>
+        <a class="intro__categories text-link" href="#">Новые поступления</a>
+        <a class="intro__categories text-link" href="#">Распродажа</a>
         <span class="intro__free-delivery">Бесплатная доставка по России</span>
       </div>
       <h1 class="intro__header intro__header--secondary">Вязание на заказ</h1>
@@ -214,46 +292,46 @@
         <fieldset class="order__section">
           <legend class="order__legend">Тип</legend>
           <label class="choose choose--radio">
-            <input class="radio" type="radio" name="type" value="interior" checked>
-            <span class="choose__icon"></span>
+            <input class="choose__radio" type="radio" name="type" value="interior" checked>
+            <span class="choose__icon choose__icon--radio"></span>
             <span class="choose__name">Аксессуар для интерьера</span>
           </label>
           <label class="choose choose--radio">
-            <input class="radio" type="radio" name="type" value="toy">
-            <span class="choose__icon"></span>
+            <input class="choose__radio" type="radio" name="type" value="toy">
+            <span class="choose__icon choose__icon--radio"></span>
             <span class="choose__name">Детская игрушка</span>
           </label>
         </fieldset>
         <fieldset class="order__section">
           <legend class="order__legend">Цвет</legend>
           <label class="choose choose--checkbox">
-            <input class="checkbox" type="checkbox" name="color" value="white" checked>
-            <span class="choose__icon"></span>
+            <input class="choose__checkbox" type="checkbox" name="color" value="white" checked>
+            <span class="choose__icon choose__icon--checkbox"></span>
             <span class="choose__name">Белый</span>
           </label>
           <label class="choose choose--checkbox">
-            <input class="checkbox" type="checkbox" name="color" value="gray" checked>
-            <span class="choose__icon"></span>
+            <input class="choose__checkbox" type="checkbox" name="color" value="gray" checked>
+            <span class="choose__icon choose__icon--checkbox"></span>
             <span class="choose__name">Серый</span>
           </label>
           <label class="choose choose--checkbox">
-            <input class="checkbox" type="checkbox" name="color" value="tiffany">
-            <span class="choose__icon"></span>
+            <input class="choose__checkbox" type="checkbox" name="color" value="tiffany">
+            <span class="choose__icon choose__icon--checkbox"></span>
             <span class="choose__name">«Тиффани»</span>
           </label>
           <label class="choose choose--checkbox">
-            <input class="checkbox" type="checkbox" name="color" value="black">
-            <span class="choose__icon"></span>
+            <input class="choose__checkbox" type="checkbox" name="color" value="black">
+            <span class="choose__icon choose__icon--checkbox"></span>
             <span class="choose__name">Черный</span>
           </label>
           <label class="choose choose--checkbox">
-            <input class="checkbox" type="checkbox" name="color" value="pink">
-            <span class="choose__icon"></span>
+            <input class="choose__checkbox" type="checkbox" name="color" value="pink">
+            <span class="choose__icon choose__icon--checkbox"></span>
             <span class="choose__name">Розовый</span>
           </label>
           <label class="choose choose--checkbox">
-            <input class="checkbox" type="checkbox" name="color" value="orange">
-            <span class="choose__icon"></span>
+            <input class="choose__checkbox" type="checkbox" name="color" value="orange">
+            <span class="choose__icon choose__icon--checkbox"></span>
             <span class="choose__name">Оранжевый</span>
           </label>
         </fieldset>
@@ -276,7 +354,7 @@
         </fieldset>
         <fieldset class="order__section">
           <legend class="order__legend">Доп</legend>
-          <textarea class="order__comment" name="comment">Опишите все ваши пожелания к заказу</textarea>
+          <textarea class="order__comment" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
         <div class="order__button-block">
           <span class="order__note">Все поля обязательны для заполнения</span>
