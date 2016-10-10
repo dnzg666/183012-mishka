@@ -93,7 +93,59 @@
 }
 
 .order__field--phone {
-  background: svg-load("../img/icon-phone.svg", fill=red);
+  background: svg-load("../../img/icon-phone.svg", fill=rgba(0, 0, 0, 0.2));
+  background-repeat: no-repeat;
+  background-position-x: 99%;
+  background-position-y: 14px;
+}
+
+.order__field--phone:hover {
+  background: svg-load("../../img/icon-phone.svg", fill=#62d1ba);
+  background-repeat: no-repeat;
+  background-position-x: 99%;
+  background-position-y: 14px;
+}
+
+.order__field--phone:focus {
+  background: svg-load("../../img/icon-phone.svg", fill=#62d1ba);
+  background-repeat: no-repeat;
+  background-position-x: 99%;
+  background-position-y: 14px;
+}
+
+.order__field--phone:invalid {
+  background: svg-load("../../img/icon-phone.svg", fill=rgba(0, 0, 0, 0.2));
+  background-repeat: no-repeat;
+  background-position-x: 99%;
+  background-position-y: 14px;
+}
+
+.order__field--email {
+  background: svg-load("../../img/icon-mail.svg", fill=rgba(0, 0, 0, 0.2));
+  background-repeat: no-repeat;
+  background-position-x: 99%;
+  background-position-y: 14px;
+}
+
+.order__field--email:hover {
+  background: svg-load("../../img/icon-mail.svg", fill=#62d1ba);
+  background-repeat: no-repeat;
+  background-position-x: 99%;
+  background-position-y: 14px;
+}
+
+.order__field--email:focus {
+  background: svg-load("../../img/icon-mail.svg", fill=#62d1ba);
+  background-repeat: no-repeat;
+  background-position-x: 99%;
+  background-position-y: 14px;
+}
+
+.order__field--email:invalid {
+  background: svg-load("../../img/icon-mail.svg", fill=rgba(0, 0, 0, 0.2));
+  background-repeat: no-repeat;
+  background-position-x: 99%;
+  background-position-y: 14px;
 }
 
 @media (--mobile-width) {
