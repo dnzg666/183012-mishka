@@ -23,7 +23,7 @@
     "precss": "1.4.0"
   },
   "scripts": {
-    "test": "editorconfig-cli",
+    "test": "editorconfig-cli && npm run build",
     "build": "gulp style",
     "start": "gulp serve"
   },
