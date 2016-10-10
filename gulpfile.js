@@ -13,7 +13,7 @@ gulp.task("style", function() {
     .pipe(plumber())
     .pipe(postcss([
       precss(),
-      postcss-inline-svg(),
+      postcssInlineSvg(),
       autoprefixer({browsers: [
         "last 1 version",
         "last 2 Chrome versions",
