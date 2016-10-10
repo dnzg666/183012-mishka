@@ -4,7 +4,7 @@ var gulp = require("gulp");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var precss = require("precss");
-var postcssInLine-svg = require("postcss-inline-svg");
+var postcssInlineSvg = require("postcss-inline-svg");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 
