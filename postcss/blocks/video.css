@@ -4,6 +4,30 @@
   padding-right: 30px;
   box-sizing: border-box;
   padding-top: 34px;
+  position: relative;
+}
+
+.video__play {
+  position: absolute;
+  display: block;
+  width: 101px;
+  height: 78px;
+  background: none;
+  background-image: url("../../img/icon-play.svg");
+  background-repeat: no-repeat;
+  left:auto;
+  right: auto;
+  border: none;
+  box-sizing: border-box;
+}
+
+.video__play:hover {
+  width: 123px;
+  height: 94px;
+}
+
+.video__play:active{
+  opacity: 0.3;
 }
 
 .video__container:hover {
@@ -89,7 +113,7 @@
     margin: 0 auto;
   }
 
-  .video__video--big {
+  .video__wrapper--big {
     display: none;
   }
 
@@ -104,7 +128,7 @@
     padding-top: 53px;
   }
 
-  .video__video--small {
+  .video__wrapper--small {
     display: none;
   }
 

@@ -25,6 +25,7 @@
   border: none;
   font-size: 17px;
   padding: 0;
+  padding-top: 13px;
   padding-bottom: 17px;
   width: 100%;
 }
@@ -79,12 +80,6 @@
   color: rgba(68, 68, 68, 0.3);
 }
 
-.order__note {
-  color: $font-color-base;
-  font-size: 14px;
-  display: block;
-}
-
 .order__button {
   margin-top: 19px;
   height: 52px;
@@ -95,12 +90,10 @@
   color: $title-color;
   font-size: 17px;
   font-weight: 700;
-  padding-top: 19px;
-  padding-bottom: 13px;
 }
 
-.order__name:first-of-type {
-  padding-top: 37px;
+.order__field--phone {
+  background: svg-load("../img/icon-phone.svg", fill=red);
 }
 
 @media (--mobile-width) {
@@ -115,6 +108,18 @@
     margin-left: -3px;
   }
 
+  .order__name:first-of-type {
+    padding-top: 37px;
+  }
+
+  .order__name-wrapper:first-of-type {
+    padding-top: 37px;
+  }
+
+  .order__name-wrapper {
+    padding-top: 20px;
+  }
+
   .order__section:before {
     content: "";
     display: block;
@@ -123,6 +128,16 @@
     background-color: $accent-color;
     margin-top: -41px;
     margin-left: 62px;
+  }
+
+  .order__section:nth-of-type(5):before {
+    content: "";
+    display: block;
+    width: 180px;
+    height: 1px;
+    background-color: $accent-color;
+    margin-top: -41px;
+    margin-left: 80px;
   }
 
   .order__section:nth-of-type(3) {
@@ -142,9 +157,16 @@
     margin-bottom: 19px;
   }
 
-  .order__note {
+  .order__note-mobile {
+    color: $font-color-base;
+    font-size: 14px;
+    display: block;
     margin-left: -3px;
     margin-right: -4px;
+  }
+
+  .order__note-tablet {
+    display: none;
   }
 
 }
@@ -161,6 +183,30 @@
     top: 70px;
   }
 
+  .order__name-wrapper {
+    display: flex;
+    margin-bottom: 21px;
+  }
+
+  .order__name {
+    font-size: 19px;
+    font-weight: 700;
+    margin-right: 25px;
+    padding-top: 14px;
+  }
+
+  .order__checkbox-wrapper {
+    width: 550px;
+  }
+
+  .order__field {
+    font-size: 19px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-top: 17px;
+    box-sizing: border-box;
+  }
+
   .order__section {
     position: relative;
     display: flex;
@@ -174,6 +220,20 @@
   .order__section:nth-of-type(2) {
     padding-top: 76px;
     padding-bottom: 25px;
+    padding-right: 0;
+  }
+
+  .order__section:nth-of-type(3) {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  .order__section:nth-of-type(2) .order__legend {
+    top: 74px;
+  }
+
+  .order__section:nth-of-type(3) .order__legend {
+    top: 62px;
   }
 
   .order__section:nth-of-type(2), .order__section:nth-of-type(4),
@@ -183,14 +243,33 @@
 
   .order__section:nth-of-type(4) {
     padding-bottom: 0;
+    padding-top: 50px;
+  }
+
+  .order__section:nth-of-type(4) .order__legend {
+    top: 67px;
   }
 
   .order__section:nth-of-type(5) {
-    padding-top: 40px;
+    padding-top: 21px;
+    padding-bottom: 67px;
   }
 
-  .order__section:last-of-type {
+  .order__section:nth-of-type(5) .order__legend {
+    top: 37px;
+  }
+
+  .order__section:nth-of-type(5) {
+    padding-top: 21px;
+  }
+
+  .order__section:nth-of-type(6) {
+    padding-top: 64px;
     padding-bottom: 53px;
+  }
+
+  .order__section:nth-of-type(6) .order__legend {
+    top: 77px;
   }
 
   .order__field--phone, .order__field--email {
@@ -199,6 +278,7 @@
 
   .order__comment {
     margin: 0;
+    font-size: 19px;
   }
 
   .order__button-block {
@@ -211,7 +291,13 @@
     padding-bottom: 52px;
   }
 
-  .order__note {
+  .order__note-mobile {
+    display: none;
+  }
+
+  .order__note-tablet {
+    color: $font-color-base;
+    display: block;
     font-size: 17px;
   }
 
@@ -222,5 +308,40 @@
     padding-bottom: 14px;
   }
 
+}
+
+@media (--desktop-width) {
+
+  .order__section {
+    padding-left: 224px;
+    padding-right: 226px;
+  }
+
+  .order__section:nth-of-type(2) {
+    padding-right: 50px;
+  }
+
+  .order__legend {
+    left: 109px;
+  }
+
+  .order__section:nth-of-type(4) .order__legend {
+    left: 113px;
+  }
+
+  .order__section:nth-of-type(5) .order__legend {
+    left: 99px;
+  }
+
+  .order__checkbox-wrapper {
+    width: auto;
+  }
+
+  .order__button-block {
+    padding-left: 224px;
+    padding-right: 226px;
+    padding-top: 39px;
+    padding-bottom: 95px;
+  }
 
 }

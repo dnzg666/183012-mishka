@@ -36,12 +36,10 @@
 
 @media (--desktop-width) {
 
-  .order-form {
-    @mixin container;
+  .order-form__description {
     padding-left: 225px;
-    padding-right: 200px;
-    box-sizing: border-box;
-    padding-top: 130px;
+    padding-top: 105px;
+    padding-right: 210px;
   }
-
+  
 }
