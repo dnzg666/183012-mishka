@@ -47,6 +47,17 @@
     font-size: 0;
   }
 
+  .header__toggle--open {
+    position: absolute;
+    right: 30px;
+    top: 29px;
+    width: 21px;
+    height: 15px;
+    background: url(../img/icon-menu-open.svg);
+    background-repeat: no-repeat;
+    font-size: 0;
+  }
+
 }
 
 @media (--tablet-width) {
