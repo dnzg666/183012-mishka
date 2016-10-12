@@ -451,27 +451,30 @@
       </div>
     </footer>
     <section class="modal">
-      <h2 class="modal__header">Добавить в корзину</h2>
-      <form class="modal__form" name="size" method="post">
-        <fieldset class="modal__section">
-          <legend class="modal__legend">Выберите размер:</legend>
-          <div class="modal__sizes">
-            <label class="modal__size">
-              <input class="modal__radio" type="radio" name="size" value="S" checked>
-              <span class="modal__name">S</span>
-            </label>
-            <label class="modal__size">
-              <input class="modal__radio" type="radio" name="size" value="M">
-              <span class="modal__name">M</span>
-            </label>
-            <label class="modal__size">
-              <input class="modal__radio" type="radio" name="size" value="L">
-              <span class="modal__name">L</span>
-            </label>
-          </div>
-        </fieldset>
-        <button class="modal__button button" type="submit">Добавить</button>
-      </form>
+      <div class="modal__content">
+        <h2 class="modal__header">Добавить в корзину</h2>
+        <form class="modal__form" name="size" method="post">
+          <fieldset class="modal__section">
+            <legend class="modal__legend">Выберите размер:</legend>
+            <div class="modal__sizes">
+              <label class="modal__size">
+                <input class="modal__radio" type="radio" name="size" value="S" checked>
+                <span class="modal__name">S</span>
+              </label>
+              <label class="modal__size">
+                <input class="modal__radio" type="radio" name="size" value="M">
+                <span class="modal__name">M</span>
+              </label>
+              <label class="modal__size">
+                <input class="modal__radio" type="radio" name="size" value="L">
+                <span class="modal__name">L</span>
+              </label>
+            </div>
+          </fieldset>
+          <button class="modal__button button" type="submit">Добавить</button>
+        </form>
+      </div>
+      <div class="modal__overlay"></div>
     </section>
   </body>
 </html>
