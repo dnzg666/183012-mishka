@@ -62,7 +62,7 @@
 @media (--mobile-width) {
 
   .feedback__author {
-    width: 300px;
+    max-width: 300px;
     margin-bottom: 33px;
   }
 

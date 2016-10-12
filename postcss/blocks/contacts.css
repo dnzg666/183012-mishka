@@ -125,6 +125,11 @@
     margin-right: auto;
   }
 
+  .contacts__map-image {
+    max-width: 100%;
+    min-height: 457px;
+  }
+
   .contacts__write {
     font-size: 18px;
     width: 260px;
