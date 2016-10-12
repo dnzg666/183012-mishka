@@ -1,4 +1,4 @@
-.header {
+.header__wrapper {
   @mixin container;
   display: flex;
   flex-direction: column;
@@ -42,7 +42,7 @@
     top: 27px;
     width: 21px;
     height: 21px;
-    background: url(../../img/icon-menu-close.svg);
+    background: url(../img/icon-menu-close.svg);
     background-repeat: no-repeat;
     font-size: 0;
   }
@@ -51,7 +51,7 @@
 
 @media (--tablet-width) {
 
-  .header {
+  .header__wrapper {
     flex-direction: row;
   }
   .header__nav {
@@ -75,6 +75,12 @@
 }
 
 @media (--desktop-width) {
+
+  .header {
+    box-shadow: inset 0 -1px 0 #ececec;
+    box-sizing: border-box;
+  }
+
   .header__nav {
     order: 2;
     flex-grow: 0;

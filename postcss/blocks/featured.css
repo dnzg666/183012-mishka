@@ -1,12 +1,15 @@
 .featured {
+  background: url("../img/bg-zigzag-line-mobile.svg");
+  background-repeat: repeat-x;
+  background-position-y: 100%;
+}
+
+.featured__wrapper {
   @mixin container;
   padding-left: 30px;
   padding-right: 30px;
   box-sizing: border-box;
   padding-bottom: 42px;
-  background: url("../../img/bg-zigzag-line-mobile.svg");
-  background-repeat: repeat-x;
-  background-position-y: 100%;
 }
 
 .featured__header {
@@ -82,15 +85,18 @@
 @media (--tablet-width) {
 
   .featured {
+    background: url("../img/bg-zigzag-line-tablet.svg");
+    background-repeat: repeat-x;
+    background-position-y: 100%;
+  }
+
+  .featured__wrapper {
     display: flex;
     flex-direction: column;;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 64px;
     margin-top: 29px;
-    background: url("../../img/bg-zigzag-line-tablet.svg");
-    background-repeat: repeat-x;
-    background-position-y: 100%;
   }
 
   .featured__block:first-of-type {
@@ -165,10 +171,13 @@
 @media (--desktop-width) {
 
   .featured {
-    margin-top: 0;
-    background: url("../../img/bg-zigzag-line.svg");
+    background: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
     background-position-y: 100%;
+  }
+
+  .featured__wrapper {
+    margin-top: 0;
     padding-bottom: 91px;
   }
 

@@ -7,18 +7,26 @@
   position: relative;
 }
 
+.video__wrapper {
+  position: relative;
+}
+
 .video__play {
   position: absolute;
   display: block;
   width: 101px;
   height: 78px;
   background: none;
-  background-image: url("../../img/icon-play.svg");
+  background-image: url("../img/icon-play.svg");
   background-repeat: no-repeat;
   left:auto;
   right: auto;
   border: none;
   box-sizing: border-box;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
 }
 
 .video__play:hover {
@@ -60,14 +68,13 @@
   display: block;
   width: 32px;
   height: 22px;
-  background-image: url(../../img/icon-video.svg);
+  background-image: url(../img/icon-video.svg);
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
   left: 33px;
   top: 31px;
 }
-
 
 .video__description {
   color: $font-color-base;

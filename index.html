@@ -6,6 +6,7 @@
    name="viewport"
    content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <script src="js/picturefill.js" async></script>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -50,30 +51,32 @@
       </symbol>
     </svg>
     <header class="header">
-      <div class="header__nav">
-        <a class="header__logo" href="index.html">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
-          </picture>
-        </a>
-        <a class="header__toggle" href="#">Открыть меню</a>
+      <div class="header__wrapper">
+        <div class="header__nav">
+          <a class="header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+            </picture>
+          </a>
+          <a class="header__toggle" href="#">Открыть меню</a>
+        </div>
+        <menu class="nav nav--1">
+          <a class="nav__link text-link" href="catalog.html">Каталог товаров</a>
+          <a class="nav__link text-link" href="form.html">Вязание на заказ</a>
+        </menu>
+        <menu class="nav nav--2">
+          <a class="nav__link" href="#">
+            <span>Поиск по сайту</span>
+            <svg class="nav__link-icon" width="18" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use></svg>
+          </a>
+          <a class="nav__link" href="#">
+            <span>Корзина: пока пуста</span>
+            <svg class="nav__link-icon" width="21" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use></svg>
+          </a>
+        </menu>
       </div>
-      <menu class="nav nav--1">
-        <a class="nav__link text-link" href="catalog.html">Каталог товаров</a>
-        <a class="nav__link text-link" href="form.html">Вязание на заказ</a>
-      </menu>
-      <menu class="nav nav--2">
-        <a class="nav__link" href="#">
-          <span>Поиск по сайту</span>
-          <svg class="nav__link-icon" width="18" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use></svg>
-        </a>
-        <a class="nav__link" href="#">
-          <span>Корзина: пока пуста</span>
-          <svg class="nav__link-icon" width="21" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use></svg>
-        </a>
-      </menu>
     </header>
     <section class="intro intro--main">
       <div class="intro__wrapper intro__wrapper--main">
@@ -92,36 +95,38 @@
       </div>
     </section>
     <section class="featured">
-      <div class="featured__block">
-        <h2 class="featured__header">Вязаные корзинки</h2>
-        <span class="featured__goods-of-week">Товар недели </span>
-      </div>
-      <div class="featured__block">
-        <div class="featured__element featured__element--1">
-          <p class="featured__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <dl class="featured__props">
-            <dt class="featured__prop">Цвет:</dt>
-            <dd class="featured__value">«Тиффани»/серый</dd>
-          </dl>
-          <dl class="featured__props">
-            <dt class="featured__prop">Диаметр:</dt>
-            <dd class="featured__value">25 см</dd>
-          </dl>
-          <dl class="featured__props">
-            <dt class="featured__prop">Высота:</dt>
-            <dd class="featured__value">15 см</dd>
-          </dl>
+      <div class="featured__wrapper">
+        <div class="featured__block">
+          <h2 class="featured__header">Вязаные корзинки</h2>
+          <span class="featured__goods-of-week">Товар недели </span>
         </div>
-        <a class="featured__image-link featured__element featured__element--2" href="#">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-            <img class="featured__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
-          </picture>
-        </a>
-        <div class="featured__element featured__element--3">
-          <span class="featured__price">Цена: 990 руб.</span>
-          <a class="featured__order-button button" href="#">Заказать</a>
+        <div class="featured__block">
+          <div class="featured__element featured__element--1">
+            <p class="featured__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <dl class="featured__props">
+              <dt class="featured__prop">Цвет:</dt>
+              <dd class="featured__value">«Тиффани»/серый</dd>
+            </dl>
+            <dl class="featured__props">
+              <dt class="featured__prop">Диаметр:</dt>
+              <dd class="featured__value">25 см</dd>
+            </dl>
+            <dl class="featured__props">
+              <dt class="featured__prop">Высота:</dt>
+              <dd class="featured__value">15 см</dd>
+            </dl>
+          </div>
+          <a class="featured__image-link featured__element featured__element--2" href="#">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <img class="featured__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+            </picture>
+          </a>
+          <div class="featured__element featured__element--3">
+            <span class="featured__price">Цена: 990 руб.</span>
+            <a class="featured__order-button button" href="#">Заказать</a>
+          </div>
         </div>
       </div>
     </section>
@@ -170,29 +175,31 @@
       <a class="feedback__write-button button" href="#">Написать</a>
     </section>
     <section class="contacts">
-      <h3 class="contacts__header">Контакты</h3>
-      <div class="contacts__props-block">
-        <dl class="contacts__props">
-          <dt class="contacts__prop">e-mail:</dt>
-          <dd class="contacts__value contacts__value--email">
-            <a href="#">info@mimimishkashop.ru</a>
-          </dd>
-        </dl>
-        <dl class="contacts__props">
-          <dt class="contacts__prop ">адрес:</dt>
-          <dd class="contacts__value contacts__value--adress">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</dd>
-        </dl>
+      <div class="contacts__wrapper">
+        <h3 class="contacts__header">Контакты</h3>
+        <div class="contacts__props-block">
+          <dl class="contacts__props">
+            <dt class="contacts__prop">e-mail:</dt>
+            <dd class="contacts__value contacts__value--email">
+              <a href="#">info@mimimishkashop.ru</a>
+            </dd>
+          </dl>
+          <dl class="contacts__props">
+            <dt class="contacts__prop ">адрес:</dt>
+            <dd class="contacts__value contacts__value--adress">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</dd>
+          </dl>
+        </div>
+        <div class="contacts__map">
+          <a class="contacts__map-link" href="#">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x">
+              <img class="contacts__map-image" src="img/map-mobile@1x.jpg" alt="Вязаные корзинки">
+            </picture>
+          </a>
+        </div>
+        <a href="#" class="contacts__write button">Напишите нам</a>
       </div>
-      <div class="contacts__map">
-        <a class="contacts__map-link" href="#">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x">
-            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x">
-            <img class="contacts__map-image" src="img/map-mobile@1x.jpg" alt="Вязаные корзинки">
-          </picture>
-        </a>
-      </div>
-      <a href="#" class="contacts__write button">Напишите нам</a>
     </section>
     <section class="intro intro--secondary">
       <div class="intro__wrapper intro__wrapper--secondary">
@@ -317,81 +324,93 @@
     <section class="order-form">
       <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="order" name="order" method="post">
-        <fieldset class="order__section">
-          <legend class="order__legend">Тип</legend>
-          <label class="choose choose--radio">
-            <input class="choose__radio" type="radio" name="type" value="interior" checked>
-            <span class="choose__icon choose__icon--radio"></span>
-            <span class="choose__name">Аксессуар для интерьера</span>
-          </label>
-          <label class="choose choose--radio">
-            <input class="choose__radio" type="radio" name="type" value="toy">
-            <span class="choose__icon choose__icon--radio"></span>
-            <span class="choose__name">Детская игрушка</span>
-          </label>
-        </fieldset>
-        <fieldset class="order__section">
-          <legend class="order__legend">Цвет</legend>
-          <div class="order__checkbox-wrapper">
-            <label class="choose choose--checkbox">
-              <input class="choose__checkbox" type="checkbox" name="color" value="white" checked>
-              <span class="choose__icon choose__icon--checkbox"></span>
-              <span class="choose__name">Белый</span>
+        <div class="order__section-wrapper">
+          <fieldset class="order__section">
+            <legend class="order__legend">Тип</legend>
+            <label class="choose choose--radio">
+              <input class="choose__radio" type="radio" name="type" value="interior" checked>
+              <span class="choose__icon choose__icon--radio"></span>
+              <span class="choose__name">Аксессуар для интерьера</span>
             </label>
-            <label class="choose choose--checkbox">
-              <input class="choose__checkbox" type="checkbox" name="color" value="gray" checked>
-              <span class="choose__icon choose__icon--checkbox"></span>
-              <span class="choose__name">Серый</span>
+            <label class="choose choose--radio">
+              <input class="choose__radio" type="radio" name="type" value="toy">
+              <span class="choose__icon choose__icon--radio"></span>
+              <span class="choose__name">Детская игрушка</span>
             </label>
-            <label class="choose choose--checkbox">
-              <input class="choose__checkbox" type="checkbox" name="color" value="tiffany">
-              <span class="choose__icon choose__icon--checkbox"></span>
-              <span class="choose__name">«Тиффани»</span>
-            </label>
-            <label class="choose choose--checkbox">
-              <input class="choose__checkbox" type="checkbox" name="color" value="black">
-              <span class="choose__icon choose__icon--checkbox"></span>
-              <span class="choose__name">Черный</span>
-            </label>
-            <label class="choose choose--checkbox">
-              <input class="choose__checkbox" type="checkbox" name="color" value="pink">
-              <span class="choose__icon choose__icon--checkbox"></span>
-              <span class="choose__name">Розовый</span>
-            </label>
-            <label class="choose choose--checkbox">
-              <input class="choose__checkbox" type="checkbox" name="color" value="orange">
-              <span class="choose__icon choose__icon--checkbox"></span>
-              <span class="choose__name">Оранжевый</span>
-            </label>
-          </div>
-        </fieldset>
-        <fieldset class="order__section">
-          <legend class="order__legend">ФИО</legend>
-          <div class="order__name-wrapper">
-            <label class="order__name" for="firstname">Имя:</label>
-            <input class="order__field" id="firstname" type="text" placeholder="Введите ваше имя">
-          </div>
-          <div class="order__name-wrapper">
-            <label class="order__name" for="secondname">Фамилия:</label>
-            <input class="order__field" id="secondname" type="text" placeholder="Укажите фамилию">
-          </div>
-          <div class="order__name-wrapper">
-            <label class="order__name" for="thirdname">Отчество:</label>
-            <input class="order__field" id="thirdname" type="text" placeholder="Отчество, если желаете">
-          </div>
-        </fieldset>
-        <fieldset class="order__section">
-          <legend class="order__legend">Тел</legend>
-          <input class="order__field order__field--phone" id="phone" type="tel" placeholder="+7 ХХХ ХХ ХХ">
-        </fieldset>
-        <fieldset class="order__section">
-          <legend class="order__legend">E-mail</legend>
-          <input class="order__field order__field--email" id="email" type="email" placeholder="Ваш Email">
-        </fieldset>
-        <fieldset class="order__section">
-          <legend class="order__legend">Доп</legend>
-          <textarea class="order__comment" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-        </fieldset>
+          </fieldset>
+        </div>
+        <div class="order__section-wrapper">
+          <fieldset class="order__section">
+            <legend class="order__legend">Цвет</legend>
+            <div class="order__checkbox-wrapper">
+              <label class="choose choose--checkbox">
+                <input class="choose__checkbox" type="checkbox" name="color" value="white" checked>
+                <span class="choose__icon choose__icon--checkbox"></span>
+                <span class="choose__name">Белый</span>
+              </label>
+              <label class="choose choose--checkbox">
+                <input class="choose__checkbox" type="checkbox" name="color" value="gray" checked>
+                <span class="choose__icon choose__icon--checkbox"></span>
+                <span class="choose__name">Серый</span>
+              </label>
+              <label class="choose choose--checkbox">
+                <input class="choose__checkbox" type="checkbox" name="color" value="tiffany">
+                <span class="choose__icon choose__icon--checkbox"></span>
+                <span class="choose__name">«Тиффани»</span>
+              </label>
+              <label class="choose choose--checkbox">
+                <input class="choose__checkbox" type="checkbox" name="color" value="black">
+                <span class="choose__icon choose__icon--checkbox"></span>
+                <span class="choose__name">Черный</span>
+              </label>
+              <label class="choose choose--checkbox">
+                <input class="choose__checkbox" type="checkbox" name="color" value="pink">
+                <span class="choose__icon choose__icon--checkbox"></span>
+                <span class="choose__name">Розовый</span>
+              </label>
+              <label class="choose choose--checkbox">
+                <input class="choose__checkbox" type="checkbox" name="color" value="orange">
+                <span class="choose__icon choose__icon--checkbox"></span>
+                <span class="choose__name">Оранжевый</span>
+              </label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="order__section-wrapper">
+          <fieldset class="order__section">
+            <legend class="order__legend">ФИО</legend>
+            <div class="order__name-wrapper">
+              <label class="order__name" for="firstname">Имя:</label>
+              <input class="order__field" id="firstname" type="text" placeholder="Введите ваше имя">
+            </div>
+            <div class="order__name-wrapper">
+              <label class="order__name" for="secondname">Фамилия:</label>
+              <input class="order__field" id="secondname" type="text" placeholder="Укажите фамилию">
+            </div>
+            <div class="order__name-wrapper">
+              <label class="order__name" for="thirdname">Отчество:</label>
+              <input class="order__field" id="thirdname" type="text" placeholder="Отчество, если желаете">
+            </div>
+          </fieldset>
+        </div>
+        <div class="order__section-wrapper">
+          <fieldset class="order__section">
+            <legend class="order__legend">Тел</legend>
+            <input class="order__field order__field--phone" id="phone" type="tel" placeholder="+7 ХХХ ХХ ХХ">
+          </fieldset>
+        </div>
+        <div class="order__section-wrapper">
+          <fieldset class="order__section">
+            <legend class="order__legend">E-mail</legend>
+            <input class="order__field order__field--email" id="email" type="email" placeholder="Ваш Email">
+          </fieldset>
+        </div>
+        <div class="order__section-wrapper">
+          <fieldset class="order__section">
+            <legend class="order__legend">Доп</legend>
+            <textarea class="order__comment" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </fieldset>
+        </div>
         <div class="order__button-block">
           <span class="order__note-mobile">Все поля обязательны для заполнения</span>
           <span class="order__note-tablet">Все поля являются обязательными</span>
@@ -400,33 +419,35 @@
       </form>
     </section>
     <footer class="page-footer">
-      <a class="page-footer__logo">
-        <svg width="102" height="34"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-footer"></use>
-        </svg>
-      </a>
-      <div class="page-footer__social social">
-        <a href="#" class="social__link social__link--inst">Instagram
-          <svg class="social__icon" width="22" height="21">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use>
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
+          <svg width="102" height="34"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-footer"></use>
           </svg>
         </a>
-        <a href="#" class="social__link social__link--fb">Facebook
-          <svg class="social__icon" width="15" height="29">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use>
-          </svg>
-        </a>
-        <a href="#" class="social__link social__link--twit">Twitter
-          <svg class="social__icon" width="24" height="20">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use>
-          </svg>
-        </a>
-      </div>
-      <div class="page-footer__copyright">
-        <a class="page-footer__copyright-link" href="#">Разработано
-          <svg class="page-footer__copyright-img">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-academy"></use>
-          </svg>
-        </a>
+        <div class="page-footer__social social">
+          <a href="#" class="social__link social__link--inst">Instagram
+            <svg class="social__icon" width="22" height="21">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use>
+            </svg>
+          </a>
+          <a href="#" class="social__link social__link--fb">Facebook
+            <svg class="social__icon" width="15" height="29">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use>
+            </svg>
+          </a>
+          <a href="#" class="social__link social__link--twit">Twitter
+            <svg class="social__icon" width="24" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="page-footer__copyright">
+          <a class="page-footer__copyright-link" href="#">Разработано
+            <svg class="page-footer__copyright-img">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-academy"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </footer>
     <section class="modal">

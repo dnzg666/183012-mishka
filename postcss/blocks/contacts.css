@@ -1,9 +1,12 @@
 .contacts {
+  background: url("../img/bg-zigzag-line-mobile.svg");
+  background-repeat: repeat-x;
+}
+
+.contacts__wrapper {
   @mixin container;
   padding-top: 42px;
   box-sizing: border-box;
-  background: url("../../img/bg-zigzag-line-mobile.svg");
-  background-repeat: repeat-x;
 }
 
 .contacts__header {
@@ -139,14 +142,17 @@
 @media (--tablet-width) {
 
   .contacts {
+    background: url("../img/bg-zigzag-line-tablet.svg");
+    background-repeat: repeat-x;
+  }
+
+  .contacts__wrapper {
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 88px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background: url("../../img/bg-zigzag-line-tablet.svg");
-    background-repeat: repeat-x;
   }
 
   .contacts__props-block {
@@ -236,12 +242,15 @@
 @media (--desktop-width) {
 
   .contacts {
+    background: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+  }
+
+  .contacts__wrapper {
     padding-left: 225px;
     position: relative;
     padding-bottom: 65px;
     padding-top: 179px;
-    background: url("../../img/bg-zigzag-line.svg");
-    background-repeat: repeat-x;
   }
 
   .contacts__header {

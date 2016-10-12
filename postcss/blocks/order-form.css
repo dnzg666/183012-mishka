@@ -1,5 +1,4 @@
 .order-form {
-  @mixin container;
   padding-left: 30px;
   padding-right: 30px;
   box-sizing: border-box;
@@ -8,6 +7,8 @@
 }
 
 .order-form__description {
+  @mixin container;
+  box-sizing: border-box;
   color: $font-color-base;
   font-size: 13px;
   line-height: 24px;
@@ -18,7 +19,6 @@
 @media (--tablet-width) {
 
   .order-form {
-    @mixin container;
     box-sizing: border-box;
     padding: 0;
   }
@@ -41,5 +41,5 @@
     padding-top: 105px;
     padding-right: 210px;
   }
-  
+
 }

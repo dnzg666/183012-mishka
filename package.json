@@ -16,16 +16,22 @@
     "@htmlacademy/editorconfig-cli": "0.0.7",
     "autoprefixer": "6.4.1",
     "browser-sync": "2.15.0",
+    "css-mqpacker": "^5.0.1",
+    "del": "^2.2.2",
     "gulp": "3.9.1",
+    "gulp-csso": "^2.0.0",
+    "gulp-imagemin": "^3.0.3",
     "gulp-plumber": "1.1.0",
     "gulp-postcss": "6.2.0",
+    "gulp-rename": "^1.2.2",
     "postcss-inline-svg": "^2.1.2",
-    "precss": "1.4.0"
+    "precss": "1.4.0",
+    "run-sequence": "^1.2.2"
   },
   "scripts": {
     "test": "editorconfig-cli && npm run build",
-    "build": "gulp style",
-    "start": "gulp serve"
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
   },
   "editorconfig-cli": [
     "*.html",
