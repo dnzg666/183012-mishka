@@ -191,6 +191,18 @@
   .featured__wrapper {
     margin-top: 0;
     padding-bottom: 91px;
+    position: relative;
+  }
+
+  .featured__block:nth-of-type(2) {
+    position: static;
+  }
+
+  .featured__element--2 {
+    top: 56px;
+    right:47px;
+    margin-top: 0;
+    z-index: -1;
   }
 
   .featured__header {
@@ -230,12 +242,6 @@
   .featured__element--1 {
      padding-left: 175px;
      padding-right: 65px;
-   }
-
-   .featured__element--2 {
-     top: -136px;
-     margin-top: 0;
-     z-index: -1;
    }
 
   .featured__element--3 {
