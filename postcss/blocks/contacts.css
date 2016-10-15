@@ -213,6 +213,7 @@
   .contacts__map {
     width: 100%;
     margin-top: 2px;
+    overflow: hidden;
   }
 
   .contacts__write {
@@ -221,7 +222,7 @@
     margin-top: 50px;
     margin-bottom: 57px;
     padding-top: 12px;
-    width: 230px;
+    min-width: 230px;
     height: 52px;
   }
 
@@ -249,6 +250,7 @@
   .contacts {
     background: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
+    padding-bottom: 40px;
   }
 
   .contacts__wrapper {

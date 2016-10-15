@@ -59,7 +59,7 @@
               <img class="header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
             </picture>
           </a>
-          <a class="header__toggle" href="#">Открыть меню</a>
+          <button class="header__toggle" href="#">Открыть меню</button>
         </div>
         <menu class="nav nav--1">
           <a class="nav__link text-link" href="#">Каталог товаров</a>
@@ -103,11 +103,11 @@
           </div>
           <div class="card__price-block">
             <span class="card__price">1 200 руб.</span>
-            <button class="card__basket" type="button">
+            <a class="card__basket" type="button">
               <svg class="card__basket-icon" width="21" height="18">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
               </svg>
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -126,11 +126,11 @@
           </div>
           <div class="card__price-block">
             <span class="card__price">690 руб.</span>
-            <button class="card__basket" type="button">
+            <a class="card__basket" type="button">
                 <svg class="card__basket-icon" width="21" height="18">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
                 </svg>
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -149,11 +149,11 @@
           </div>
           <div class="card__price-block">
             <span class="card__price">1 500 руб.</span>
-            <button class="card__basket" type="button">
+            <a class="card__basket" type="button">
               <svg class="card__basket-icon" width="21" height="18">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
               </svg>
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -178,10 +178,12 @@
     </section>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo">
-          <svg width="102" height="34"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-footer"></use>
-          </svg>
-        </a>
+        <div class="page-footer__logo-wrapper">
+          <a class="page-footer__logo">
+            <svg width="102" height="34"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-footer"></use>
+            </svg>
+          </a>
+        </div>
         <div class="page-footer__social social">
           <a href="#" class="social__link social__link--inst">Instagram
             <svg class="social__icon" width="22" height="21">

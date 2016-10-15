@@ -10,11 +10,6 @@
 .intro__wrapper--main {
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../img/hero-mobile@1x.jpg);
-  background-size: 575px auto;
-  @media (--retina) {
-    background-image: url(../img/hero-mobile@2x.jpg);
-  }
 }
 
 .intro--secondary {
@@ -170,6 +165,16 @@
 
 @media (--mobile-width) {
 
+  .intro__wrapper--main {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/hero-mobile@1x.jpg);
+    background-size: 575px auto;
+    @media (--retina) {
+      background-image: url(../img/hero-mobile@2x.jpg);
+    }
+  }
+
   .intro__wrapper {
     background-position: 50% -15%;
   }
@@ -186,10 +191,15 @@
 
 @media (--tablet-width) {
 
+  .intro {
+    overflow: hidden;
+  }
+
   .intro__wrapper {
     display: flex;
     flex-wrap: wrap;
   }
+
 
   .intro__wrapper--main {
     background-image: url(../img/hero-desktop@1x.jpg);
@@ -252,7 +262,7 @@
 
   .intro__section {
     width: 50%;
-    padding-right: 0;
+    padding-right: 25%;
     font-size: 20px;
     line-height: 30px;
     padding-top: 28px;
@@ -340,7 +350,7 @@
     width: 100%;
     height: 34px;
     background-image: url("../img/bg-zigzag-fill.svg");
-    background-position-x: 30px;
+    background-position-x: 0px;
     margin-top: -18px;
   }
 
@@ -383,7 +393,7 @@
     padding-left: 39px;
     text-decoration: none;
     box-sizing: border-box;
-    padding-right: 37%
+    padding-right: 30%
   }
 
 }

@@ -45,6 +45,8 @@
     background: url(../img/icon-menu-close.svg);
     background-repeat: no-repeat;
     font-size: 0;
+    border: none;
+    padding: 0;
   }
 
   .header__toggle--open {
@@ -60,13 +62,20 @@
 
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1149px) {
+
+  .header__nav {
+    width: 323px;
+  }
+
+}
+
 @media (--tablet-width) {
 
   .header__wrapper {
     flex-direction: row;
   }
   .header__nav {
-    position: relative;
     border-right: 1px solid #ececec;
     flex-grow: 1;
   }
@@ -90,6 +99,10 @@
   .header {
     box-shadow: inset 0 -1px 0 #ececec;
     box-sizing: border-box;
+  }
+
+  .header__wrapper {
+    width: 1150px;
   }
 
   .header__nav {

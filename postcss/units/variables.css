@@ -2,7 +2,7 @@
 @custom-media --tablet-width (min-width: 768px);
 @custom-media --desktop-width (min-width: 1150px);
 @custom-media --retina (min-resolution: 144dpi), (min-resolution: 1.5dppx);
-@custom-media --tablet-only (min-width: 768px), (max-width: 1149px);
+@custom-media --tablet-only (min-width: 768px) and (max-width: 1149px);
 
 $title-color: #000000;
 $font-color-base: #444444;

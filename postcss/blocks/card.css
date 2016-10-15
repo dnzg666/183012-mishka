@@ -1,5 +1,8 @@
 .card {
   margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .card:hover {
@@ -16,6 +19,9 @@
   padding-left: 27px;
   padding-right: 27px;
   padding-bottom: 27px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .card__preview {
@@ -73,6 +79,8 @@
 .card__price-block {
   border-top: 1px solid #ececec;
   padding-top: 21px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .card__basket {
@@ -123,6 +131,7 @@
     align-items: stretch;
     margin-top: 55px;
     display: flex;
+    flex-direction: row;
     width: 100%;
     align-items: stretch;
   }
@@ -154,7 +163,7 @@
 
   .card__text {
     box-sizing: border-box;
-    flex-grow: 1;
+    flex: 1;
     padding-bottom: 25px;
   }
 
@@ -187,6 +196,7 @@
     width: 315px;
     margin: 0;
     padding: 0;
+    margin-bottom: 58px;
   }
 
   .card__preview-image {

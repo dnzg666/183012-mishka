@@ -200,7 +200,7 @@
 
   .video {
     display: block;
-    padding-top: 58px;
+    padding-top: 0;
     padding-bottom: 105px;
     box-sizing: border-box;
     width: 1049px;

@@ -1,5 +1,4 @@
 .button {
-  width: 260px;
   color: $font-color-base;
   font-size: 17px;
   font-weight: 700;
@@ -12,6 +11,9 @@
   display: block;
   background-color: $base-background-color;
   box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow-wrap: break-word;
 }
 
 .button:hover {

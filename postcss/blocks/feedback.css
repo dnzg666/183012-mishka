@@ -119,7 +119,7 @@
   }
 
   .feedback__write-button {
-    width: 175px;
+    min-width: 175px;
     padding-top: 23px;
     padding-bottom: 23px;
     margin-top: 7px;
@@ -186,7 +186,6 @@
   }
 
   .feedback__write-button {
-
     margin-top: 13px;
   }
 
